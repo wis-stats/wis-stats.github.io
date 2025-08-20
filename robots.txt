@@ -1,0 +1,1 @@
+Sitemap: https://wis-stats.github.io/sitemap.xml
