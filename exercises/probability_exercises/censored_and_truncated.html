@@ -926,14 +926,8 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">In this section</h2>
-   
-  <ul class="collapse">
-  <li><a href="#solution" id="toc-solution" class="nav-link active" data-scroll-target="#solution"><span class="header-section-number">63.1</span> Solution</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -971,38 +965,8 @@ window.Quarto = {
 <p>Let <span class="math inline">\(y\)</span> be the time to descend the pole for patient experimenters. That is, <span class="math inline">\(y\)</span> can be greater than <span class="math inline">\(y_\mathrm{max}\)</span> seconds. Let <span class="math inline">\(f(y)\)</span> by the probability density function of descent time and <span class="math inline">\(F(y)\)</span> be the corresponding CDF.</p>
 <p><strong>a)</strong> Write down an expression for <span class="math inline">\(f_\mathrm{trunc}(y)\)</span>, the probability density function for experimenter A’s observations in terms of <span class="math inline">\(f(y)\)</span> and <span class="math inline">\(F(y)\)</span>. This is called a <em>truncated</em> distribution.</p>
 <p><strong>b)</strong> Write down an expression for <span class="math inline">\(f_\mathrm{cens}(y)\)</span>, the probability density function for experimenter B’s observations that are <em>not</em> <span class="math inline">\(y_\mathrm{max}\)</span>. Also write an expression for <span class="math inline">\(\pi(y_\mathrm{max})\)</span>, which is the probability that experimenter B records <span class="math inline">\(y_\mathrm{max}\)</span>. This is called a <em>censored</em> distribution.</p>
-<section id="solution" class="level2" data-number="63.1">
-<h2 data-number="63.1" class="anchored" data-anchor-id="solution"><span class="header-section-number">63.1</span> Solution</h2>
-<hr>
-<p>For both a truncated distribution and a censored distribution, the probability density for a given value is proportional to that of the uncensored and untruncated distribution, such that <span class="math inline">\(f_\mathrm{trunc}(y) \propto f(y)\)</span> and <span class="math inline">\(f_\mathrm{cens}(y) \propto f(y)\)</span>. We just have to find the normalization constant.</p>
-<p><strong>a)</strong> For a truncated distribution all observations are in the domain of the original distribution up to <span class="math inline">\(y_\mathrm{max}\)</span>. So, the normalization constant is the inverse of</p>
-<p><span class="math display">\[\begin{align}
-\int_{-\infty}^{y_\mathrm{max}} \mathrm{d}y\,f(y) = F(y_\mathrm{max}),
-\end{align}
-\]</span></p>
-<p>giving</p>
-<p><span class="math display">\[\begin{align}
-f_\mathrm{trunc}(y) = \left\{\begin{array}{lll}
-\displaystyle{\frac{f(y)}{F(y_\mathrm{max})}} &amp; &amp; y \le y_\mathrm{max} \\[1em]
-0 &amp; &amp; y &gt; y_\mathrm{max}
-\end{array}
-\right.
-\end{align}
-\]</span></p>
-<p><strong>b)</strong> For a censored distribution, the probability of observing <span class="math inline">\(y_\mathrm{max}\)</span> is the probability of having a descent time greater than <span class="math inline">\(y_\mathrm{max}\)</span>, which is simply <span class="math inline">\(1 - F(y_\mathrm{max})\)</span>. The normalization condition is that all probabilities must sum to one, or</p>
-<p><span class="math display">\[\begin{align}
-1 - F(y_\mathrm{max}) + \int_{-\infty}^{y_\mathrm{max}} \mathrm{d}y\,f_\mathrm{cens}(y) = 1.
-\end{align}
-\]</span></p>
-<p>Therefore,</p>
-<p><span class="math display">\[\begin{align}
-F(y_\mathrm{max}) = \int_{-\infty}^{y_\mathrm{max}} \mathrm{d}y\,f_\mathrm{cens}(y),
-\end{align}
-\]</span></p>
-<p>such that <span class="math inline">\(f_\mathrm{cens}(y) = f(y)\)</span> for all <span class="math inline">\(y &lt; y_\mathrm{max}\)</span>.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

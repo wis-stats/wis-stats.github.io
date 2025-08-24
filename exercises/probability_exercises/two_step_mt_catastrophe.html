@@ -926,14 +926,8 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">In this section</h2>
-   
-  <ul class="collapse">
-  <li><a href="#solution" id="toc-solution" class="nav-link active" data-scroll-target="#solution"><span class="header-section-number">62.1</span> Solution</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -976,35 +970,8 @@ F(t; \beta_1, \beta_2) =
 <p><span class="math display">\[\begin{align}
 f(t;\beta) = \beta^2\,t\,\mathrm{e}^{-\beta t}.
 \end{align}\]</span></p>
-<section id="solution" class="level2" data-number="62.1">
-<h2 data-number="62.1" class="anchored" data-anchor-id="solution"><span class="header-section-number">62.1</span> Solution</h2>
-<hr>
-<p><strong>a)</strong> The Gamma distribution describes the waiting time for multiple arrivals of a Poisson process. Chemical processes are often modeled as Poisson processes, and one can imagine that it may take several successive chemical processes to trigger a catastrophe event. If these processes all have similar rates, the time to catastrophe could be approximately Gamma distributed.</p>
-<p><strong>b)</strong> Assume the first process arrives at time <span class="math inline">\(t_1\)</span>. The second process then has the possibility to arrive, so we must wait a time <span class="math inline">\(t-t_1\)</span> for it to arrive at time <span class="math inline">\(t\)</span>. Because the arrival times of the respective events are independent, the joint probability density function is</p>
-<p><span class="math display">\[\begin{align}
-f(t, t_1) = f(t-t_1)\,f(t_1).
-\end{align}\]</span></p>
-<p>The waiting times are Exponentially distributed, so we have</p>
-<p><span class="math display">\[\begin{align}
-f(t, t_1) = \beta_2\mathrm{e}^{-\beta_2(t-t_1)}\,\beta_1\mathrm{e}^{-\beta_1 t_1}.
-\end{align}\]</span></p>
-<p>To get the PDF <span class="math inline">\(f(t)\)</span>, then, we marginalize over all of the values that <span class="math inline">\(t_1\)</span> can take, which is all values from zero to <span class="math inline">\(t\)</span>.</p>
-<p><span class="math display">\[\begin{align}
-f(t) &amp;= \int_0^t\mathrm{d}t_1\,f(t, t_1) \\[1em]
-&amp;=  \int_0^t \mathrm{d}t_1\,\beta_2\mathrm{e}^{-\beta_2(t-t_1)}\,\beta_1\mathrm{e}^{-\beta_1 t_1} \\[1em]
-&amp;= \beta_1\beta_2\mathrm{e}^{-\beta_2 t} \int_0^t \mathrm{d}t_1\,\mathrm{e}^{-(\beta_1 - \beta_2)t_1} \\[1em]
-&amp;= \frac{\beta_1\beta_2\,\mathrm{e}^{-\beta_2 t}}{\beta_1-\beta_2}\left(1 - \mathrm{e}^{-(\beta_1 - \beta_2)t}\right) \\[1em]
-&amp;= \frac{\beta_1\beta_2}{\beta_2-\beta_1}\left(\mathrm{e}^{-\beta_1 t} - \mathrm{e}^{-\beta_2 t}\right).
-\end{align}\]</span></p>
-<p>Note that in the limit of <span class="math inline">\(\beta_1 \to \beta_2 \equiv \beta\)</span>, this becomes</p>
-<p><span class="math display">\[\begin{align}
-f(t) &amp;= \beta^2\,t\,\mathrm{e}^{-\beta t},
-\end{align}\]</span></p>
-<p>which is the PDF of a Gamma distribution with parameter <span class="math inline">\(\alpha = 2\)</span>.</p>
-<p><strong>c)</strong> In the limit of <span class="math inline">\(\beta_1 = \beta_2 \equiv \beta\)</span>, the distribution describes the amount of time it takes for two arrivals from a Poisson process with rate parameter <span class="math inline">\(\beta\)</span>. This story matches that of the Gamma distribution where <span class="math inline">\(\alpha = 2\)</span>, and the stated PDF is indeed the PDF for that distribution.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
