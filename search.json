@@ -3447,6 +3447,114 @@
     ]
   },
   {
+    "objectID": "exercises/bayesian_modeling_exercises/bayesian_modeling_exercises.html",
+    "href": "exercises/bayesian_modeling_exercises/bayesian_modeling_exercises.html",
+    "title": "Bayesian modeling exercises",
+    "section": "",
+    "text": "In these exercises, we will do some Bayesic Bayesian modeling.",
+    "crumbs": [
+      "Bayesian modeling exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/bayesian_modeling_exercises/carrion_beetles.html",
+    "href": "exercises/bayesian_modeling_exercises/carrion_beetles.html",
+    "title": "72  Building a Bayesian model",
+    "section": "",
+    "text": "| Download notebook\n\nCollard and coworkers did a simple experiment. They collected samples of carrion beetles (beetles that feed on decaying animal matter) and measured morphological features of the beetles of various species, collected from different sites at different times of the year.\nImagine that you are in a cabin in Maine. There are also plenty of carrion beetles in the area in which you are staying, so you are curious to look at the morphological features of the beetles in your area. Your plan to set up a trap near your cabin to collect specimens from a given species. For each beetle you collect, you will measure its mass and the length of its elytra.\na) Propose a generative model, including priors, for the probability distribution describing the observed elytra length and mass.\nb) Now you will generate data sets that you might expect to observe in your experiment. To generate one of the data sets do the following.\n\nDraw a set of parameter values out of the probability distribution you constructed for the parameters (the prior).\nUse those parameters to parametrize the likelihood and draw 40 samples of beetle masses and elytra lengths out of it.\n\nYou can do this many many times to see how the data sets might look. Generate many such data sets and make plots of them. (You should think carefully about how you might want to plot these to best make clear to you how the data sets coming from your generative model may look.) Does this jibe with what you would expect from your experiment? If not, do you have any ideas why not?\nc) Do not attempt this part of the problem until parts (a) through (c) are complete. You can access the measurements of Collard and coworkers here. Extract the measurements made of Nicrophorus orbicollis at location MASS 10 in trap 0. Does the measured data set fall within the data sets you might expect from your proposed generative model?",
+    "crumbs": [
+      "Bayesian modeling exercises",
+      "<span class='chapter-number'>72</span>  <span class='chapter-title'>Building a Bayesian model</span>"
+    ]
+  },
+  {
+    "objectID": "exercises/bayesian_modeling_exercises/inverse_gaussian_spiking_ppc.html",
+    "href": "exercises/bayesian_modeling_exercises/inverse_gaussian_spiking_ppc.html",
+    "title": "73  An Inverse Gaussian model for spiking: Prior predictive checks",
+    "section": "",
+    "text": "| Download notebook\n\nIn Chapter 25, we considered a simple experiment wherein we measure the interspike intervals (ISIs) of a retinal ganglion cell exposed to constant light. Your task in this problem is to develop a Bayesian model where the ISIs are all independent and Inverse Gaussian distributed. You should perform prior predictive checks to help you hone your priors. It will help you to read the section on the Inverse Gaussian distribution in the Distribution Explorer to see how to sample out of the distribution with Numpy and with Stan. When you do your prior predictive checks, assume you observe 200 spikes.",
+    "crumbs": [
+      "Bayesian modeling exercises",
+      "<span class='chapter-number'>73</span>  <span class='chapter-title'>An Inverse Gaussian model for spiking: Prior predictive checks</span>"
+    ]
+  },
+  {
+    "objectID": "exercises/bayesian_modeling_exercises/exp_gamma_conj.html",
+    "href": "exercises/bayesian_modeling_exercises/exp_gamma_conj.html",
+    "title": "74  Exponential ISIs and Gamma priors",
+    "section": "",
+    "text": "| Download notebook\n\nIf I have ISIs that are Exponentially distributed, I need to infer the spiking rate \\(\\beta\\). Prove that if I have a Gamma prior for \\(\\beta\\) that that posterior is also Gamma. That is, prove that the Gamma distribution if conjugate to the Exponential. If the set of ISIs is \\(\\mathbf{y} = (y_1, y_2, \\ldots, y_3)\\), how are the prior parameters updated in the posterior?",
+    "crumbs": [
+      "Bayesian modeling exercises",
+      "<span class='chapter-number'>74</span>  <span class='chapter-title'>Exponential ISIs and Gamma priors</span>"
+    ]
+  },
+  {
+    "objectID": "exercises/bayesian_modeling_exercises/changepoint_model.html",
+    "href": "exercises/bayesian_modeling_exercises/changepoint_model.html",
+    "title": "75  Building a changepoint model",
+    "section": "",
+    "text": "| Download notebook\n\nConsider the following twist on the experiment we have been considering where a retinal ganglion cell’s spiking is monitored under constant light. The retina is exposed to constant light, but at some time between the start and end of the experience, the impinging light intensity changes. That is, for \\(0 \\le t &lt; s\\), the retina is exposed to one light intensity, and for \\(s \\le t \\le T\\), it is exposed to another. The problem is that you do not know what \\(s\\) is, and you have to infer it. Your task is to construct a Bayesian model for this situation, complete with prior predictive checks.\nThis is a simple example of a decoding problem, in which a stimulus is inferred from neuronal signals.",
+    "crumbs": [
+      "Bayesian modeling exercises",
+      "<span class='chapter-number'>75</span>  <span class='chapter-title'>Building a changepoint model</span>"
+    ]
+  },
+  {
+    "objectID": "exercises/inference_with_mcmc_exercises/inference_with_mcmc_exercises.html",
+    "href": "exercises/inference_with_mcmc_exercises/inference_with_mcmc_exercises.html",
+    "title": "Inference with MCMC exercises",
+    "section": "",
+    "text": "Now it’s time to take some random walks on some probability density surfaces!",
+    "crumbs": [
+      "Inference with MCMC exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/inference_with_mcmc_exercises/boolean_sampling.html",
+    "href": "exercises/inference_with_mcmc_exercises/boolean_sampling.html",
+    "title": "76  Working with Boolean data",
+    "section": "",
+    "text": "| Download notebook\n\nIn this problem, we will work with data of the True/False type. Lots of data sets in the biological sciences are like this. For example, we might look at a certain mutation in Drosophila that affects development and we might check whether or not eggs hatch.\nThe data we will use comes from an experiment we have done in past years in Bi 1x at Caltech. We studied a neural circuit in C. elegans using optogenetics.\nA neural circuit is a series of interconnected neurons that create a pathway to transmit a signal from where it is received to where it causes a behavioral response in an animal. An example is the neural circuit involved in reversals in C. elegans. This circuit consists of three types of neurons: sensory neurons receive stimuli from the environment, command interneurons integrate information from many sensory neurons and pass a signal to the motor neurons, and motor neurons that control worm behavior, such as reversals.\nThere are six non-motor neurons acting in a circuit that responds to environmental cues and triggers a reversal, a shown in the figure below (based on Schultheis et. al. 2011). These include four sensory neurons (ALM, AVM, ASH, and PLM) and two interneurons (AVD and AVA). Each sensory neuron is sensitive to a different type of stimulus. For example, the sensory neuron we are studying (ASH) is sensitive to chemosensory stimuli such as toxins, while another neuron (PLM) is sensitive to mechanical stimuli (touch) in the posterior part of the worm’s body. The sensory neurons send signals that are integrated by the two command interneurons (AVA and AVD). Each sensory neuron can provide an impulse to the command interneurons at any time. In order for the command interneuron to fire and activate motor neurons, the sum of the stimuli at any point in time must exceed a certain threshold. Once the stimuli from one or more sensory neurons has induced an action potential in a command interneuron, that signal is passed to motor neurons which will modulate worm behavior.\n {#fig-reversal-neural-network width=70%}\nIn the experiment, we used optogenetics to dissect the function of individual neurons in this circuit. We worked with two optogenetic worm strains. The ASH strain has Channelrhodopsin (ChR2, represented by a red barrel in the figure above) expressed only in the ASH sensory neuron. When we shine blue light on this strain, we should activate the ChR2, which will allow sodium and calcium cations to flow into the neuron, simulating an action potential. We want to quantify how robustly this stimulation will cause the worm to exhibit aversion behavior and reverse.\nWe also studied an AVA strain that has channelrhodopsin expressed only in the AVA command interneuron. Our goal is to quantify the effects of stimulating this neuron in terms of reversals compared to the ASH neuron and to wild type.\nThe True/False data here are the whether or not the worms undergo a reversal. Here is what the students observed.\n\n\n\nStrain\nYear\nTrials\nReversals\n\n\n\n\nWT\n2017\n55\n7\n\n\nASH\n2017\n54\n18\n\n\nAVA\n2017\n52\n28\n\n\nWT\n2016\n36\n6\n\n\nASH\n2016\n35\n12\n\n\nAVA\n2016\n36\n30\n\n\nWT\n2015\n35\n0\n\n\nASH\n2015\n35\n9\n\n\nAVA\n2015\n36\n33\n\n\n\nFor the purposes of this problem, assume that we can pool the results from the three years to have 13/126 reversals for wild type, 39/124 reversals for ASH, and 91/124 reversals for AVA.\nOur goal is to estimate \\(\\theta\\), the probability of reversal upon exposure to blue light for each strain. That is to say, we want to compute \\(g(\\theta\\mid n, N)\\), where \\(n\\) is the number of reversals in \\(N\\) trials.\na) Propose a reasonable model and then draw samples of \\(\\theta\\) out of the posterior distribution using Stan.\nb) The posterior plots of \\(\\theta\\) are illuminating, but suppose we want to quantify the difference in reversal probability between the two strains, say strain 1 and strain 2. That is, we want to compute \\(g(\\delta_{12}\\mid n_1, N_1, n_2, N_2)\\), where \\(\\delta_{12} \\equiv \\theta_2 - \\theta_1\\). Plot samples of \\(\\delta_\\mathrm{WT,ASH}\\), \\(\\delta_\\mathrm{WT,AVA}\\), and \\(\\delta_\\mathrm{ASH,AVA}\\).",
+    "crumbs": [
+      "Inference with MCMC exercises",
+      "<span class='chapter-number'>76</span>  <span class='chapter-title'>Working with Boolean data</span>"
+    ]
+  },
+  {
+    "objectID": "exercises/inference_with_mcmc_exercises/mt_catastrophe_models.html",
+    "href": "exercises/inference_with_mcmc_exercises/mt_catastrophe_models.html",
+    "title": "77  Inference of parameters of microtubule catastrophe",
+    "section": "",
+    "text": "| Download notebook\nData set download\n\nIn this problem, we use data from Gardner, Zanic, et al., Depolymerizing kinesins Kip3 and MCAK shape cellular microtubule architecture by differential control of catastrophe, Cell, 147, 1092-1103, 2011. The authors investigated the dynamics of microtubule catastrophe, the switching of a microtubule from a growing to a shrinking state. In particular, they were interested in the time between the start of growth of a microtubule and the catastrophe event. They monitored microtubules in a single-molecule TIRF assay by using tubulin (the monomer that comprises a microtubule) that was labeled with a fluorescent marker. As a control to make sure that fluorescent labels and exposure to laser light did not affect the microtubule dynamics, they performed a similar experiment using differential interference contrast (DIC) microscopy. They measured the time until catastrophe with labeled and unlabeled tubulin. We will carefully analyze the data and make some conclusions about the processes underlying microtubule catastrophe.\nIn the file gardner_mt_catastrophe_only_tubulin.csv (which you can download here), we have observed catastrophe times of microtubules with different concentrations of tubulin. We will consider the experiment run with a tubulin concentration of 12 µM. So, our data set consists of a set of measurements of the amount of time to catastrophe. We will consider four models for microtubule catastrophe.\n\nModel 1: The time to catastrophe is Exponentially distributed.\nModel 2: The time to catastrophe is Gamma distributed.\nModel 3: The time to catastrophe is Weibull distributed.\nModel 4: Catastrophe happens upon the arrival of the second of two Poisson processes, each of which arrive at different rates.\n\nNote that these descriptions are for the likelihood; we have not specified priors.\na) Describe the first three models as stories. Give physical descriptions of the meanings of their parameters. Describe how these models are related to each other. Recall that we worked out the likelihood for model 4 in a previous exercise. How is it related to the other three models?\nb) Build full Bayesian generative models for each of the models. Be sure to perform prior predictive checks. After building the model, perform parameter estimates, and then do posterior predictive checks.\nc) Based on the graphical analysis, do you prefer one model versus another? We will be discussing quantitative model comparison in coming weeks to enable to more detailed analysis.",
+    "crumbs": [
+      "Inference with MCMC exercises",
+      "<span class='chapter-number'>77</span>  <span class='chapter-title'>Inference of parameters of microtubule catastrophe</span>"
+    ]
+  },
+  {
+    "objectID": "exercises/inference_with_mcmc_exercises/heavy_tails_outliers.html",
+    "href": "exercises/inference_with_mcmc_exercises/heavy_tails_outliers.html",
+    "title": "78  Heavy-tailed distributions and outliers",
+    "section": "",
+    "text": "| Download notebook\nDataset download\n\nDavid Prober’s lab studies sleep using zebrafish as a model organism. In a paper by Gandhi and coworkers his lab studied the effect of a deletion in the gene coding for arylalkylamine N-acetyltransferase (aanat), which is a key enzyme in the rhythmic production of melatonin. Melatonin is a hormone responsible for regulation of circadian rhythms. It is often taken as a drug to treat sleep disorders. The goal of this study was to investigate the effects of aanat deletion on sleep pattern in 5+ day old zebrafish larvae.\nIn one of the analyses, the authors compared the average activity of multiple fish over the course of night 6 of their lives. Here, activity is defined as the number of seconds per ten minutes that the fish is moving. You can download the results of the data processing here: https://s3.amazonaws.com/bebi103.caltech.edu/data/gandhi_et_al_night_six_activity.csv.\nIn performing exploratory data analysis, you will see that there are some clear outliers in activity. For at least two of these outliers, domain experts have told me that there were developmental problems with the fish.\nNormal models tend to fail when there are outliers. This is because of the very light tail of the Normal distribution. If you have an experiment that you suspect may have major deviations, it is often useful to choose a generative model with heavier tails. To that end, model the activity with a Student-t distribution. Obtain parameter estimates for the \\(\\mu\\) parameter of the Student-t distribution for each genotype.",
+    "crumbs": [
+      "Inference with MCMC exercises",
+      "<span class='chapter-number'>78</span>  <span class='chapter-title'>Heavy-tailed distributions and outliers</span>"
+    ]
+  },
+  {
+    "objectID": "exercises/inference_with_mcmc_exercises/changepoint_sampling.html",
+    "href": "exercises/inference_with_mcmc_exercises/changepoint_sampling.html",
+    "title": "79  Inferring a changepoint",
+    "section": "",
+    "text": "| Download notebook\nData set download\n\nIn ?exr-changepoint-model, you developed a model for a changepoint analysis. The text of that problem is repeated below.\n\nConsider the following twist on the experiment we have been considering where a retinal ganglion cell’s spiking is monitored under constant light. The retina is exposed to constant light, but at some time between the start and end of the experience, the impinging light intensity changes. That is, for \\(0 \\le t &lt; s\\), the retina is exposed to one light intensity, and for \\(s \\le t \\le T\\), it is exposed to another. The problem is that you do not know what \\(s\\) is, and you have to infer it. Your task is to construct a Bayesian model for this situation, complete with prior predictive checks.\nThis is a simple example of a decoding problem, in which a stimulus is inferred from neuronal signals.\n\nFor this data set, \\(T = 60\\) seconds.\nYour task in this problem is to infer the neuron firing rates before and after the changepoint as well as the changepoint itself. Hint: It is often quite difficult to directly sample latent variables like a changepoint. If you can analytically marginalize out the changepoint \\(s\\), you may then be able to sample the other parameters and then after sampling compute the marginal distribution for \\(s\\). It may be useful to use the following integral for \\(0 &lt; t_1 &lt; t_2 &lt; \\cdots &lt; t_n &lt; T\\), where \\(\\theta(x)\\) denotes a Heaviside step function.\n\\[\\begin{align}\n\\int_0^{T}\\mathrm{d}s\\,\\prod_{i=1}^n\\left[\\beta_1 + (\\beta_2 - \\beta_1)\\theta(t_i-s)\\right]\\,\\mathrm{e}^{-(\\beta_1-\\beta_2)s}\n= \\frac{\\beta_2^n - \\beta_1^n\\,\\mathrm{e}^{-(\\beta_1 - \\beta_2)T}}{\\beta_1 - \\beta_2} + \\sum_{i=1}^n\\beta_1^{i-1}\\,\\beta_2^{n-i}\\,\\mathrm{e}^{-(\\beta_1 - \\beta_2)t_i}.\n\\end{align}\n\\]",
+    "crumbs": [
+      "Inference with MCMC exercises",
+      "<span class='chapter-number'>79</span>  <span class='chapter-title'>Inferring a changepoint</span>"
+    ]
+  },
+  {
     "objectID": "appendices/notation.html",
     "href": "appendices/notation.html",
     "title": "Appendix A — Notation",
