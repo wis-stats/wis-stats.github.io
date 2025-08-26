@@ -1,6 +1,6 @@
 [workspace]
 authors = ["Justin Bois <bois@caltech.edu>"]
-channels = ["conda-forge"]
+channels = ["conda-forge", "mysys2"]
 name = "wis_stats"
 platforms = ["osx-arm64", "linux-64", "win-64", "osx-64"]
 version = "0.1.0"
@@ -87,8 +87,11 @@ xarray-einstats = ">=0.9.1, <0.10"
 [target.win-64.pypi-dependencies]
 polars = ">=1.32.3, <2"
 
+
 [target.linux-64.pypi-dependencies]
 polars = ">=1.32.3, <2"
+libpython = { channel = "mysys2" }
+m2w64-toolchain = { channel = "mysys2" }
 
 [target.osx-arm64.pypi-dependencies]
 polars = ">=1.32.3, <2"

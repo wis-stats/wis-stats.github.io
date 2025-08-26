@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>37&nbsp; Parameter estimation by optimization case study: Gamma likelihood – Statistical Inference at WIS</title>
+<title>36&nbsp; Parameter estimation by optimization case study: Gamma likelihood – Statistical Inference at WIS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -152,7 +152,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/optimization/optimization.html">Summarizing posterior distributions with maxima</a></li><li class="breadcrumb-item"><a href="../../lessons/optimization/gamma_optimization.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Parameter estimation by optimization case study: Gamma likelihood</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/optimization/optimization.html">Summarizing posterior distributions with maxima</a></li><li class="breadcrumb-item"><a href="../../lessons/optimization/gamma_optimization.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Parameter estimation by optimization case study: Gamma likelihood</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -444,8 +444,8 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../lessons/principled/principled.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Principled inference pipelines</span></a>
+            <a href="../../lessons/mixture_models/mixture_models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mixture models</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -453,20 +453,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../lessons/mixture_models/mixture_model_stan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Mixture models and label switching with MCMC</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../lessons/principled/principled.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principled inference pipelines</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../lessons/principled/mcmc_diagnostics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">MCMC diagnostics via a case study: Artificial funnel of hell</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">MCMC diagnostics via a case study: Artificial funnel of hell</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/principled/sbc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Principled analysis pipelines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Principled analysis pipelines</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/principled/sbc_in_practice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Simulation based calibration and related checks in practice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Simulation based calibration and related checks in practice</span></span></a>
   </div>
 </li>
       </ul>
@@ -475,29 +492,6 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../lessons/model_assessment/model_assessment.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Model assessment</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../lessons/model_assessment/model_comparison.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Model comparison</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../lessons/model_assessment/model_comparison_in_practice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Model comparison in practice</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../lessons/variate_covariate/intro_variate_covariate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Variate-covariate models</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -505,14 +499,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../lessons/variate_covariate/model_building.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Model building</span></span></a>
+  <a href="../../lessons/model_assessment/model_comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Model comparison</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../lessons/variate_covariate/variate_covariate_with_stan.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Variate-covariate models with MCMC</span></span></a>
+  <a href="../../lessons/model_assessment/model_comparison_in_practice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Model comparison in practice</span></span></a>
   </div>
 </li>
       </ul>
@@ -529,43 +523,66 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/optimization/optimization_basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Bayesian approach to parameter estimation by optimization</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Bayesian approach to parameter estimation by optimization</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/optimization/gamma_optimization.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Parameter estimation by optimization case study: Gamma likelihood</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Parameter estimation by optimization case study: Gamma likelihood</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/optimization/mm_algorithms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Minorize-maximize algorithms</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Minorize-maximize algorithms</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/optimization/em_algorithm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">The expectation-maximization (EM) algorithm</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">The expectation-maximization (EM) algorithm</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/optimization/em_gmm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">EM applied to a Gaussian mixture model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">EM applied to a Gaussian mixture model</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/optimization/em_gmm_example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">An example application of the EM algorithm to a Gaussian mixture model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">An example application of the EM algorithm to a Gaussian mixture model</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/optimization/kmeans.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">K-means clustering</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">K-means clustering</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../lessons/variate_covariate/intro_variate_covariate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Variate-covariate models</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../lessons/variate_covariate/model_building.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Model building</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../lessons/variate_covariate/variate_covariate_with_stan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Variate-covariate models with MCMC</span></span></a>
   </div>
 </li>
       </ul>
@@ -574,39 +591,39 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../lessons/hierarchical/hierarchical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hierarchical models</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/modeling_repeated_experiments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Modeling repeated experiments</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Modeling repeated experiments</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/choosing_a_hierarchical_prior.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Choosing a hierarchical prior</span></span></a>
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Choosing a hierarchical prior</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/generalization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/hierarchical_implementation_worms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></a>
   </div>
 </li>
       </ul>
@@ -615,27 +632,27 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../lessons/pca_and_related/pca_and_related.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Principal component analysis and related models</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/pca_and_related/heuristic_pca.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Principal component analysis: A heuristic approach</span></span></a>
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">Principal component analysis: A heuristic approach</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/pca_and_related/factor_analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">Factor analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Factor analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/pca_and_related/pca_nmf_as_fa.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Special cases of factor analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Special cases of factor analysis</span></span></a>
   </div>
 </li>
       </ul>
@@ -644,15 +661,15 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../lessons/HMM/hmm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hidden Markov models</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/HMM/hmm_gaussian_emission.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Hidden Markov models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Hidden Markov models</span></span></a>
   </div>
 </li>
       </ul>
@@ -661,21 +678,21 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../lessons/GLM/glm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Generalized linear models</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/GLM/glm_intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Generalized linear models: An introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Generalized linear models: An introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/GLM/glm_in_practice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">GLMs applied to neurons and aggression</span></span></a>
+ <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">GLMs applied to neurons and aggression</span></span></a>
   </div>
 </li>
       </ul>
@@ -684,33 +701,33 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../exercises/polars_exercises/polars_exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Polars and split-apply-combine exercises</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/polars_exercises/frog_tongue_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Mastering selection and filtering of data frames</span></span></a>
+ <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Mastering selection and filtering of data frames</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/polars_exercises/frog_tongue_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Split-Apply-Combine of the frog data set</span></span></a>
+ <span class="menu-text"><span class="chapter-number">56</span>&nbsp; <span class="chapter-title">Split-Apply-Combine of the frog data set</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/polars_exercises/frog_tongue_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">56</span>&nbsp; <span class="chapter-title">Adding data to a data frame</span></span></a>
+ <span class="menu-text"><span class="chapter-number">57</span>&nbsp; <span class="chapter-title">Adding data to a data frame</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/polars_exercises/palmer_penguins.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">57</span>&nbsp; <span class="chapter-title">Palmer penguins and split-apply-combine</span></span></a>
+ <span class="menu-text"><span class="chapter-number">58</span>&nbsp; <span class="chapter-title">Palmer penguins and split-apply-combine</span></span></a>
   </div>
 </li>
       </ul>
@@ -719,27 +736,27 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../exercises/viz_exercises/viz_exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data visualization exercises</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/viz_exercises/palmer_penguins_plot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">58</span>&nbsp; <span class="chapter-title">Plotting with Palmer penguins</span></span></a>
+ <span class="menu-text"><span class="chapter-number">59</span>&nbsp; <span class="chapter-title">Plotting with Palmer penguins</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/viz_exercises/mt_catastrophe_ecdfs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">59</span>&nbsp; <span class="chapter-title">Microtubule catastrophe and ECDFs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">60</span>&nbsp; <span class="chapter-title">Microtubule catastrophe and ECDFs</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/viz_exercises/finches_plotting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">60</span>&nbsp; <span class="chapter-title">Long-term trends in hybridization of Darwin finches</span></span></a>
+ <span class="menu-text"><span class="chapter-number">61</span>&nbsp; <span class="chapter-title">Long-term trends in hybridization of Darwin finches</span></span></a>
   </div>
 </li>
       </ul>
@@ -748,39 +765,39 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../exercises/probability_exercises/probability_exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Probability exercises</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/probability_exercises/distribution_stories.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">61</span>&nbsp; <span class="chapter-title">Distribution stories</span></span></a>
+ <span class="menu-text"><span class="chapter-number">62</span>&nbsp; <span class="chapter-title">Distribution stories</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/probability_exercises/two_step_mt_catastrophe.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">62</span>&nbsp; <span class="chapter-title">Models for microtubule catastrophe</span></span></a>
+ <span class="menu-text"><span class="chapter-number">63</span>&nbsp; <span class="chapter-title">Models for microtubule catastrophe</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/probability_exercises/censored_and_truncated.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">63</span>&nbsp; <span class="chapter-title">Censored and truncated distributions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">Censored and truncated distributions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/probability_exercises/isi_distributions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">Distributions of interspike intervals</span></span></a>
+ <span class="menu-text"><span class="chapter-number">65</span>&nbsp; <span class="chapter-title">Distributions of interspike intervals</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/probability_exercises/normal_approx.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">65</span>&nbsp; <span class="chapter-title">Normal approximations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">66</span>&nbsp; <span class="chapter-title">Normal approximations</span></span></a>
   </div>
 </li>
       </ul>
@@ -789,33 +806,33 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../exercises/sampling_exercises/sampling_exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sampling and simulation exercises</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/sampling_exercises/practice_sampling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">66</span>&nbsp; <span class="chapter-title">Exploring and sampling probability distributions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">67</span>&nbsp; <span class="chapter-title">Exploring and sampling probability distributions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/sampling_exercises/heavy_tails.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">67</span>&nbsp; <span class="chapter-title">Exploring tails of distributions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">68</span>&nbsp; <span class="chapter-title">Exploring tails of distributions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/sampling_exercises/two_step_mt_catastrophe_sampling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">68</span>&nbsp; <span class="chapter-title">Simulating distributions MT catastrophe in a two-step model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">69</span>&nbsp; <span class="chapter-title">Simulating distributions MT catastrophe in a two-step model</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/sampling_exercises/refractory_isi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">69</span>&nbsp; <span class="chapter-title">Spike timing with a refractory period</span></span></a>
+ <span class="menu-text"><span class="chapter-number">70</span>&nbsp; <span class="chapter-title">Spike timing with a refractory period</span></span></a>
   </div>
 </li>
       </ul>
@@ -824,21 +841,21 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../exercises/intro_mcmc_exercises/intro_mcmc_exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introductory MCMC exercises</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/intro_mcmc_exercises/sample_bivariate_normal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">70</span>&nbsp; <span class="chapter-title">Sampling out of a bivariate Normal distribution</span></span></a>
+ <span class="menu-text"><span class="chapter-number">71</span>&nbsp; <span class="chapter-title">Sampling out of a bivariate Normal distribution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/intro_mcmc_exercises/funnel_of_hell.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">71</span>&nbsp; <span class="chapter-title">Funnel of hell</span></span></a>
+ <span class="menu-text"><span class="chapter-number">72</span>&nbsp; <span class="chapter-title">Funnel of hell</span></span></a>
   </div>
 </li>
       </ul>
@@ -847,33 +864,33 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../exercises/bayesian_modeling_exercises/bayesian_modeling_exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bayesian modeling exercises</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/bayesian_modeling_exercises/carrion_beetles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">72</span>&nbsp; <span class="chapter-title">Building a Bayesian model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">73</span>&nbsp; <span class="chapter-title">Building a Bayesian model</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/bayesian_modeling_exercises/inverse_gaussian_spiking_ppc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">73</span>&nbsp; <span class="chapter-title">An Inverse Gaussian model for spiking: Prior predictive checks</span></span></a>
+ <span class="menu-text"><span class="chapter-number">74</span>&nbsp; <span class="chapter-title">An Inverse Gaussian model for spiking: Prior predictive checks</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/bayesian_modeling_exercises/exp_gamma_conj.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">74</span>&nbsp; <span class="chapter-title">Exponential ISIs and Gamma priors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">75</span>&nbsp; <span class="chapter-title">Exponential ISIs and Gamma priors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/bayesian_modeling_exercises/changepoint_model.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">75</span>&nbsp; <span class="chapter-title">Building a changepoint model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">76</span>&nbsp; <span class="chapter-title">Building a changepoint model</span></span></a>
   </div>
 </li>
       </ul>
@@ -882,55 +899,78 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../exercises/inference_with_mcmc_exercises/inference_with_mcmc_exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inference with MCMC exercises</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/inference_with_mcmc_exercises/boolean_sampling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">76</span>&nbsp; <span class="chapter-title">Working with Boolean data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">77</span>&nbsp; <span class="chapter-title">Working with Boolean data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/inference_with_mcmc_exercises/mt_catastrophe_models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">77</span>&nbsp; <span class="chapter-title">Inference of parameters of microtubule catastrophe</span></span></a>
+ <span class="menu-text"><span class="chapter-number">78</span>&nbsp; <span class="chapter-title">Inference of parameters of microtubule catastrophe</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/inference_with_mcmc_exercises/heavy_tails_outliers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">78</span>&nbsp; <span class="chapter-title">Heavy-tailed distributions and outliers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">79</span>&nbsp; <span class="chapter-title">Heavy-tailed distributions and outliers</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/inference_with_mcmc_exercises/changepoint_sampling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">79</span>&nbsp; <span class="chapter-title">Inferring a changepoint</span></span></a>
+ <span class="menu-text"><span class="chapter-number">80</span>&nbsp; <span class="chapter-title">Inferring a changepoint</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false">
- <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false">
- <span class="menu-text">Notation</span></a>
+            <a href="../../exercises/variate_covariate_exercises/variate_covariate_exercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Variate-covariate modeling exercises</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../exercises/variate_covariate_exercises/dissociation_anisotropy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">81</span>&nbsp; <span class="chapter-title">Determining a dissociation constants</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../exercises/variate_covariate_exercises/acetylcholine_receptor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">82</span>&nbsp; <span class="chapter-title">Diagnosing nonidentifiability with MCMC</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-26" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-27" role="navigation" aria-expanded="false">
+ <span class="menu-text">Notation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-27" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-27" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../appendices/notation.html" class="sidebar-item-text sidebar-link">
@@ -941,13 +981,13 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" role="navigation" aria-expanded="false">
  <span class="menu-text">Computing</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-26" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-28" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../appendices/setting_up_python_computing_environment.html" class="sidebar-item-text sidebar-link">
@@ -1040,20 +1080,20 @@ window.Quarto = {
     <h2 id="toc-title">In this section</h2>
    
   <ul class="collapse">
-  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link active" data-scroll-target="#exploratory-data-analysis"><span class="header-section-number">37.1</span> Exploratory data analysis</a></li>
-  <li><a href="#the-model" id="toc-the-model" class="nav-link" data-scroll-target="#the-model"><span class="header-section-number">37.2</span> The model</a></li>
-  <li><a href="#obtaining-map-parameters-by-optimization" id="toc-obtaining-map-parameters-by-optimization" class="nav-link" data-scroll-target="#obtaining-map-parameters-by-optimization"><span class="header-section-number">37.3</span> Obtaining MAP parameters by optimization</a></li>
-  <li><a href="#sec-stan-opt" id="toc-sec-stan-opt" class="nav-link" data-scroll-target="#sec-stan-opt"><span class="header-section-number">37.4</span> Optimization with Stan</a></li>
-  <li><a href="#computing-environment" id="toc-computing-environment" class="nav-link" data-scroll-target="#computing-environment"><span class="header-section-number">37.5</span> Computing environment</a></li>
+  <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link active" data-scroll-target="#exploratory-data-analysis"><span class="header-section-number">36.1</span> Exploratory data analysis</a></li>
+  <li><a href="#the-model" id="toc-the-model" class="nav-link" data-scroll-target="#the-model"><span class="header-section-number">36.2</span> The model</a></li>
+  <li><a href="#obtaining-map-parameters-by-optimization" id="toc-obtaining-map-parameters-by-optimization" class="nav-link" data-scroll-target="#obtaining-map-parameters-by-optimization"><span class="header-section-number">36.3</span> Obtaining MAP parameters by optimization</a></li>
+  <li><a href="#sec-stan-opt" id="toc-sec-stan-opt" class="nav-link" data-scroll-target="#sec-stan-opt"><span class="header-section-number">36.4</span> Optimization with Stan</a></li>
+  <li><a href="#computing-environment" id="toc-computing-environment" class="nav-link" data-scroll-target="#computing-environment"><span class="header-section-number">36.5</span> Computing environment</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/optimization/optimization.html">Summarizing posterior distributions with maxima</a></li><li class="breadcrumb-item"><a href="../../lessons/optimization/gamma_optimization.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Parameter estimation by optimization case study: Gamma likelihood</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/optimization/optimization.html">Summarizing posterior distributions with maxima</a></li><li class="breadcrumb-item"><a href="../../lessons/optimization/gamma_optimization.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Parameter estimation by optimization case study: Gamma likelihood</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-gamma-opt" class="quarto-section-identifier"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Parameter estimation by optimization case study: Gamma likelihood</span></span></h1>
+<h1 class="title"><span id="sec-gamma-opt" class="quarto-section-identifier"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Parameter estimation by optimization case study: Gamma likelihood</span></span></h1>
 </div>
 
 
@@ -1437,8 +1477,8 @@ function(Bokeh) {
 </div>
 <hr>
 <p>In <span class="quarto-unresolved-ref">?exr-gamma-spike</span>, you considered a model for spiking in which interspike intervals are Gamma distributed. We will use that model here to demonstrate optimization procedures for MAP funding.</p>
-<section id="exploratory-data-analysis" class="level2" data-number="37.1">
-<h2 data-number="37.1" class="anchored" data-anchor-id="exploratory-data-analysis"><span class="header-section-number">37.1</span> Exploratory data analysis</h2>
+<section id="exploratory-data-analysis" class="level2" data-number="36.1">
+<h2 data-number="36.1" class="anchored" data-anchor-id="exploratory-data-analysis"><span class="header-section-number">36.1</span> Exploratory data analysis</h2>
 <p>We’ll again make a quick ECDF of the data set as a remidner.</p>
 <div id="cell-5" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load in as dataframe</span></span>
@@ -1488,8 +1528,8 @@ function(Bokeh) {
 </div>
 </div>
 </section>
-<section id="the-model" class="level2" data-number="37.2">
-<h2 data-number="37.2" class="anchored" data-anchor-id="the-model"><span class="header-section-number">37.2</span> The model</h2>
+<section id="the-model" class="level2" data-number="36.2">
+<h2 data-number="36.2" class="anchored" data-anchor-id="the-model"><span class="header-section-number">36.2</span> The model</h2>
 <p>We will model the interspike intervals as being Gamma distributed with broad priors for the Gamma distribution parameters. Our model is as follows.</p>
 <p><span class="math display">\[\begin{align}
 &amp;\alpha \sim \text{HalfNorm(0, 100)} ,\\[1em]
@@ -1598,8 +1638,8 @@ function(Bokeh) {
 </div>
 </div>
 </section>
-<section id="obtaining-map-parameters-by-optimization" class="level2" data-number="37.3">
-<h2 data-number="37.3" class="anchored" data-anchor-id="obtaining-map-parameters-by-optimization"><span class="header-section-number">37.3</span> Obtaining MAP parameters by optimization</h2>
+<section id="obtaining-map-parameters-by-optimization" class="level2" data-number="36.3">
+<h2 data-number="36.3" class="anchored" data-anchor-id="obtaining-map-parameters-by-optimization"><span class="header-section-number">36.3</span> Obtaining MAP parameters by optimization</h2>
 <p>Finding the MAP amounts to an <strong>optimization problem</strong> in which we find the arguments (parameters) for which a function (the posterior distribution) is maximal. It is almost always much easier to find the maximum for the <em>logarithm</em> of the posterior. In fact, in the vast majority of Bayesian inference problems, we work with log posteriors instead of the posteriors themselves. Since the logarithm function is monotonic, a maximum of the log posterior is also a maximum of the posterior. So, our first step is code up a function that returns the log posterior.</p>
 <p>In considering a log posterior, it is useful to know that</p>
 <p><span class="math display">\[\begin{align}
@@ -1694,8 +1734,8 @@ f(y\mid \theta) = f(y_1 \mid \theta)\,f(y_2 \mid \theta)\,f(y_3 \mid \theta)\cdo
 </div>
 </div>
 <p>We have successfully found the MAP which provides just that; the maximally probable parameter values. This tells us only one piece of information about the posterior; where it is maximal. So we know where all of the first derivatives of the posterior are zero. We want to learn more about it, at least near the MAP. To that end, we can compute all of the second derivatives of the log posterior near the MAP. Using the second derivatives (the Hessian), we can start to understand the posterior, at least locally, by approximating it as Normal.</p>
-<section id="normal-approximation-of-the-posterior" class="level3" data-number="37.3.1">
-<h3 data-number="37.3.1" class="anchored" data-anchor-id="normal-approximation-of-the-posterior"><span class="header-section-number">37.3.1</span> Normal approximation of the posterior</h3>
+<section id="normal-approximation-of-the-posterior" class="level3" data-number="36.3.1">
+<h3 data-number="36.3.1" class="anchored" data-anchor-id="normal-approximation-of-the-posterior"><span class="header-section-number">36.3.1</span> Normal approximation of the posterior</h3>
 <p>To compute the Normal approximation of the posterior, our task is two-fold. First, find the parameter values that give the maximal posterior probability, which we have already done. Second, compute the Hessian of the log posterior at the MAP and invert it to get your covariance matrix. Note that the covariance matrix is <strong>not</strong> the inverse of every element of the Hessian; it is the inverse of the Hessian <em>matrix</em>. The credible interval for each parameter can then be calculated from the diagonal elements of the covariance matrix.</p>
 <p>To compute the covariance matrix, we need to compute the Hessian of the log of the posterior at the MAP. We will do this numerically using the <code>statsmodels.tools.numdiff</code> module, which we imported as <code>smnd</code>. We use the function <code>smnd.approx_hess()</code> to compute the Hessian at the optimal parameter values. Note that since we already have the log posterior coded up and the MAP parameter values, we can just directly shove these into the numerical Hessian calculator.</p>
 <div id="cell-18" class="cell" data-execution_count="9">
@@ -1715,8 +1755,8 @@ f(y\mid \theta) = f(y_1 \mid \theta)\,f(y_2 \mid \theta)\,f(y_3 \mid \theta)\cdo
 </div>
 <p>The diagonal terms give the approximate variance in the parameters in the posterior. The off-diagonal terms give the covariance, which describes how the parameters relate to each other. Nonzero covariance indicates that they are not completely independent.</p>
 </section>
-<section id="credible-intervals" class="level3" data-number="37.3.2">
-<h3 data-number="37.3.2" class="anchored" data-anchor-id="credible-intervals"><span class="header-section-number">37.3.2</span> Credible intervals</h3>
+<section id="credible-intervals" class="level3" data-number="36.3.2">
+<h3 data-number="36.3.2" class="anchored" data-anchor-id="credible-intervals"><span class="header-section-number">36.3.2</span> Credible intervals</h3>
 <p>We can compute the approximate 95% credible intervals for the parameters by multiplying the diagonal terms of the posterior covariance matrix <span class="math inline">\(\mathsf{\Sigma}\)</span> by 1.96.</p>
 <div id="cell-23" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Report results</span></span>
@@ -1736,8 +1776,8 @@ Credible intervals (≈ 95% of total probability density)
 </div>
 </div>
 </section>
-<section id="how-good-is-the-approximation" class="level3" data-number="37.3.3">
-<h3 data-number="37.3.3" class="anchored" data-anchor-id="how-good-is-the-approximation"><span class="header-section-number">37.3.3</span> How good is the approximation?</h3>
+<section id="how-good-is-the-approximation" class="level3" data-number="36.3.3">
+<h3 data-number="36.3.3" class="anchored" data-anchor-id="how-good-is-the-approximation"><span class="header-section-number">36.3.3</span> How good is the approximation?</h3>
 <p>To assess how close the Normal approximation is to the posterior, let’s plot the Normal approximation on top of the corner plot.</p>
 <div id="cell-25" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract plots</span></span>
@@ -1809,8 +1849,8 @@ Credible intervals (≈ 95% of total probability density)
 <p>The Normal approximation, shown in orange, is not that far off from the posterior, especially at the peak. <strong>This is not always the case!</strong> This is one of the main dangers of using optimization, you are using <em>very</em> local information to summarize a posterior that may have relevant features away from the MAP. Despite the marginal distributions being close, we do see that the full posterior is slightly rotated; we do not completely correctly capture the covariance present in the posterior.</p>
 </section>
 </section>
-<section id="sec-stan-opt" class="level2" data-number="37.4">
-<h2 data-number="37.4" class="anchored" data-anchor-id="sec-stan-opt"><span class="header-section-number">37.4</span> Optimization with Stan</h2>
+<section id="sec-stan-opt" class="level2" data-number="36.4">
+<h2 data-number="36.4" class="anchored" data-anchor-id="sec-stan-opt"><span class="header-section-number">36.4</span> Optimization with Stan</h2>
 <p>Stan does have functionality for finding the MAP (<a href="https://mc-stan.org/docs/reference-manual/optimization.html">docs</a>). To find a MAP, use the <code>sm.optimize()</code> function. By default, Stan with transform the parameters appropriately and use the BFGS algorithm. The optimized parameters can then be accesses as a dictionary using the <code>optimized_params_dict</code> attribute of the output.</p>
 <div id="cell-29" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>sm_opt <span class="op">=</span> sm.optimize(data<span class="op">=</span>data)</span>
@@ -1830,8 +1870,8 @@ Credible intervals (≈ 95% of total probability density)
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>bebi103.stan.clean_cmdstan()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="computing-environment" class="level2" data-number="37.5">
-<h2 data-number="37.5" class="anchored" data-anchor-id="computing-environment"><span class="header-section-number">37.5</span> Computing environment</h2>
+<section id="computing-environment" class="level2" data-number="36.5">
+<h2 data-number="36.5" class="anchored" data-anchor-id="computing-environment"><span class="header-section-number">36.5</span> Computing environment</h2>
 <div id="cell-33" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>load_ext watermark</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>watermark <span class="op">-</span>v <span class="op">-</span>p numpy,polars,scipy,cmdstanpy,arviz,statsmodels,iqplot,bokeh,bebi103,jupyterlab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2260,12 +2300,12 @@ jupyterlab : 4.3.7
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../lessons/optimization/optimization_basics.html" class="pagination-link" aria-label="Bayesian approach to parameter estimation by optimization">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Bayesian approach to parameter estimation by optimization</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Bayesian approach to parameter estimation by optimization</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../lessons/optimization/mm_algorithms.html" class="pagination-link" aria-label="Minorize-maximize algorithms">
-        <span class="nav-page-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Minorize-maximize algorithms</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Minorize-maximize algorithms</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
