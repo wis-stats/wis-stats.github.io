@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>45&nbsp; Choosing a hierarchical prior – Statistical Inference at WIS</title>
+<title>84&nbsp; Heavy-tailed distributions and outliers revisited – Statistical Inference at WIS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../lessons/hierarchical/hierarchical_implementation.html" rel="next">
-<link href="../../lessons/hierarchical/modeling_repeated_experiments.html" rel="prev">
+<link href="../../appendices/notation.html" rel="next">
+<link href="../../exercises/optimization_exercises/spike_intervals_optim.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -113,7 +113,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/choosing_a_hierarchical_prior.html"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Choosing a hierarchical prior</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../exercises/optimization_exercises/optimization_exercises.html">Optimization exercises</a></li><li class="breadcrumb-item"><a href="../../exercises/optimization_exercises/heavy_tails_outliers_optim.html"><span class="chapter-number">84</span>&nbsp; <span class="chapter-title">Heavy-tailed distributions and outliers revisited</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -552,11 +552,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../lessons/hierarchical/hierarchical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hierarchical models</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/modeling_repeated_experiments.html" class="sidebar-item-text sidebar-link">
@@ -565,7 +565,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../lessons/hierarchical/choosing_a_hierarchical_prior.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../lessons/hierarchical/choosing_a_hierarchical_prior.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Choosing a hierarchical prior</span></span></a>
   </div>
 </li>
@@ -918,11 +918,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../exercises/optimization_exercises/optimization_exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Optimization exercises</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-26" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-26" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/optimization_exercises/spike_intervals_optim.html" class="sidebar-item-text sidebar-link">
@@ -931,7 +931,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../exercises/optimization_exercises/heavy_tails_outliers_optim.html" class="sidebar-item-text sidebar-link">
+  <a href="../../exercises/optimization_exercises/heavy_tails_outliers_optim.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">84</span>&nbsp; <span class="chapter-title">Heavy-tailed distributions and outliers revisited</span></span></a>
   </div>
 </li>
@@ -1059,22 +1059,15 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">In this section</h2>
-   
-  <ul class="collapse">
-  <li><a href="#exchangeability" id="toc-exchangeability" class="nav-link active" data-scroll-target="#exchangeability"><span class="header-section-number">45.1</span> Exchangeability</a></li>
-  <li><a href="#choice-of-the-conditional-distribution" id="toc-choice-of-the-conditional-distribution" class="nav-link" data-scroll-target="#choice-of-the-conditional-distribution"><span class="header-section-number">45.2</span> Choice of the conditional distribution</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/choosing_a_hierarchical_prior.html"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Choosing a hierarchical prior</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../exercises/optimization_exercises/optimization_exercises.html">Optimization exercises</a></li><li class="breadcrumb-item"><a href="../../exercises/optimization_exercises/heavy_tails_outliers_optim.html"><span class="chapter-number">84</span>&nbsp; <span class="chapter-title">Heavy-tailed distributions and outliers revisited</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-hierarchical-prior" class="quarto-section-identifier"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Choosing a hierarchical prior</span></span></h1>
+<h1 class="title"><span id="exr-heavy-tails-outliers-optim" class="quarto-section-identifier"><span class="chapter-number">84</span>&nbsp; <span class="chapter-title">Heavy-tailed distributions and outliers revisited</span></span></h1>
 </div>
 
 
@@ -1091,58 +1084,18 @@ window.Quarto = {
 </header>
 
 
-<p><a href="https://colab.research.google.com/github/wis-stats/wis_stats_notebooks_2025/blob/main/choosing_a_hierarchical_prior.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Google Colab" title="Open in Google Colab"></a> | <a href="https://colab.research.google.com/github/wis-stats/wis_stats_notebooks_2025/blob/main/choosing_a_hierarchical_prior.ipynb">Download notebook</a></p>
+<p><a href="https://colab.research.google.com/github/wis-stats/wis_stats_notebooks_2025/blob/main/heavy_tails_outliers_optim.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Google Colab" title="Open in Google Colab"></a> | <a href="https://colab.research.google.com/github/wis-stats/wis_stats_notebooks_2025/blob/main/heavy_tails_outliers_optim.ipynb">Download notebook</a></p>
+<p><a href="https://s3.amazonaws.com/bebi103.caltech.edu/data/gandhi_et_al_night_six_activity.csv">Dataset download</a></p>
 <hr>
-<p>Choice of a hierarchical prior is not always as straightforward as for priors we are used to considering because we have to specify the hyperprior and all conditional priors, <span class="math inline">\(g(\theta\mid \phi)\)</span>.</p>
-<section id="exchangeability" class="level2" data-number="45.1">
-<h2 data-number="45.1" class="anchored" data-anchor-id="exchangeability"><span class="header-section-number">45.1</span> Exchangeability</h2>
-<p>The conditional probability, <span class="math inline">\(g(\theta\mid \phi)\)</span>, can take any reasonable form. In the case where we have no reason to believe that we can distinguish any one <span class="math inline">\(\theta_i\)</span> from another prior to the experiment, then the label “<span class="math inline">\(i\)</span>” applied to the experiment may be exchanged with the label of any other experiment. I.e., <span class="math inline">\(g(\theta_1, \theta_2, \ldots, \theta_k \mid \phi)\)</span> is invariant to permutations of the indices. Parameters behaving this way are said to be <strong>exchangeable</strong>. A common (simple) exchangeable distribution is</p>
-<p><span class="math display">\[\begin{align}
-g(\theta\mid \phi) = \prod_{i=1}^k g(\theta_i\mid \phi),
-\end{align}\]</span></p>
-<p>which means that each of the parameters is an independent sample out of a distribution <span class="math inline">\(g(\theta_i\mid \phi)\)</span>, which we often take to be the same for all <span class="math inline">\(i\)</span>. This is reasonable to do in the worm reversal example.</p>
-<p>In all of the hierarchical models we will work with, we will assume exchangeability. In situations where the indices of the experiment contain real information, meaning that the prior is no longer invariant to permuations of the indices, we lose exchangeability. An example would be if we did one set of experiments on one instrument and another set of experiments on another instrument. If we suspect these different instrument may have a real effect on the measured data, we need to explicitly model the differences. This is an example of a <strong>factor model</strong>, which feature more nuance than the hierarchical models we will consider. We will not go into factor models in this course (but we definitely would if we had more time! Add it to the long list of beautiful advanced topics….). Of course, we may <em>choose</em> to ignore differences between the two instruments in our modeling and recover exchangeability.</p>
-</section>
-<section id="choice-of-the-conditional-distribution" class="level2" data-number="45.2">
-<h2 data-number="45.2" class="anchored" data-anchor-id="choice-of-the-conditional-distribution"><span class="header-section-number">45.2</span> Choice of the conditional distribution</h2>
-<p>We need to specify our prior, which for this hierarchical model means that we have to specify the conditional distribution, <span class="math inline">\(g(\theta_i\mid \phi)\)</span>, as well as <span class="math inline">\(g(\phi)\)</span>. We could assume a Beta prior for <span class="math inline">\(\phi\)</span>; the one we chose in our original nonhierarchical model would be a good choice.</p>
-<p><span class="math display">\[\begin{align}
-\phi \sim \text{Beta}(1.1, 1.1).
-\end{align}\]</span></p>
-<p>For the conditional distribution <span class="math inline">\(g(\theta_i\mid \phi)\)</span>, we might also assume it is Beta-distributed. This necessitates another parameter because the Beta distribution has two parameters.</p>
-<p>The Beta distribution is typically written as</p>
-<p><span class="math display">\[\begin{align}
-g(\theta\mid \alpha, \beta) = \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\,
-\theta^{\alpha-1}(1-\theta)^{\beta-1},
-\end{align}\]</span></p>
-<p>where it is parametrized by positive constants <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>. The Beta distribution has mean and <strong>concentration</strong>, respectively, of</p>
-<p><span class="math display">\[\begin{align}
-\phi &amp;= \frac{\alpha}{\alpha + \beta}, \\[1em]
-\kappa &amp;= \alpha + \beta.
-\end{align}\]</span></p>
-<p>The concentration <span class="math inline">\(\kappa\)</span> is a measure of how sharp the distribution is. The bigger <span class="math inline">\(\kappa\)</span> is, the most sharply peaked the distribution is. Since we would like to parametrize our Beta distribution with its mean <span class="math inline">\(\phi\)</span>, we could use <span class="math inline">\(\kappa\)</span> as our other parameter. So, our expression for the posterior is</p>
-<p><span class="math display">\[\begin{align}
-g(\theta, \phi, \kappa \mid n, N) = \frac{f(n,N\mid \theta)\,\left(
-\prod_{i=1}^k g(\theta_i\mid \phi, \kappa)\right)\,g(\phi, \kappa)}{f(n, N)}.
-\end{align}\]</span></p>
-<p>We are left to specify the hyperprior <span class="math inline">\(g(\phi, \kappa)\)</span>. We will take <span class="math inline">\(\phi\)</span> to come from a Beta distribution and <span class="math inline">\(\kappa\)</span> to come from an weakly informative Half-Normal. Note that to switch from a parametrization using <span class="math inline">\(\phi\)</span> and <span class="math inline">\(\kappa\)</span> to one using <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>, we can use</p>
-<p><span class="math display">\[\begin{align}
-&amp;\alpha = \phi \kappa\\[1em]
-&amp;\beta = (1-\phi)\kappa.
-\end{align}\]</span></p>
-<p>With all of this, we can now put together our model.</p>
-<p><span class="math display">\[\begin{align}
-&amp;\phi \sim \text{Beta}(1.1, 1.1), \\[1em]
-&amp;\kappa \sim \text{HalfNorm}(0, 1000), \\[1em]
-&amp;\alpha = \phi \kappa, \\[1em]
-&amp;\beta = (1-\phi)\kappa,\\[1em]
-&amp;\theta_i \sim \text{Beta}(\alpha, \beta) \;\;\forall i,\\[1em]
-&amp;n_i \sim \text{Binom}(N_i, \theta_i)\;\;\forall i.
-\end{align}\]</span></p>
-<p>This is a complete specification of a hierarchical model.</p>
+<p>In <span class="quarto-unresolved-ref">?exr-heavy-tails-outliers</span>, you modeled zebrafish activity using a Normal model and also with a Student-t model that allows for heavier tails. In that case, you used Markov chain Monte Carlo. Here, you will repeat the problem, but use optimization to get parameter estimates.</p>
+<p><em>Because I am having trouble getting references to exercises working, I am repeating much of the text from <span class="quarto-unresolved-ref">?exr-heavy-tails-outliers</span> below.</em></p>
+<p>David Prober’s lab studies sleep using zebrafish as a model organism. In a <a href="https://doi.org/10.1016/j.neuron.2015.02.016">paper by Gandhi and coworkers</a> his lab studied the effect of a deletion in the gene coding for arylalkylamine N-acetyltransferase (aanat), which is a key enzyme in the rhythmic production of melatonin. Melatonin is a hormone responsible for regulation of circadian rhythms. It is often taken as a drug to treat sleep disorders. The goal of this study was to investigate the effects of <em>aanat</em> deletion on sleep pattern in 5+ day old zebrafish larvae.</p>
+<p>In one of the analyses, the authors compared the average activity of multiple fish over the course of night 6 of their lives. Here, activity is defined as the number of seconds per ten minutes that the fish is moving. You can download the results of the data processing here: <a href="https://s3.amazonaws.com/bebi103.caltech.edu/data/gandhi_et_al_night_six_activity.csv">https://s3.amazonaws.com/bebi103.caltech.edu/data/gandhi_et_al_night_six_activity.csv</a>.</p>
+<p>In performing exploratory data analysis, you will see that there are some clear outliers in activity. For at least two of these outliers, domain experts have told me that there were developmental problems with the fish.</p>
+<p><strong>a)</strong> Construct a model assuming that the activity of fish for each respective genotype is Normally distributed. Obtain MAP estimates for the mean activity (parameter <span class="math inline">\(\mu\)</span>) for each genotype with credible intervals.</p>
+<p><strong>b)</strong> Normal models tend to fail when there are outliers. This is because of the very light tail of the Normal distribution. If you have an experiment that you suspect may have major deviations, it is often useful to choose a generative model with heavier tails. To that end, build a model where the distribution for the activity has a distribution with a heavier tail. Obtain MAP estimates for the parameter <span class="math inline">\(\mu\)</span> with credible intervals. Comment on how the inference changes using this model. It will help to make graphical displays of the data and the inference overlaid.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1546,13 +1499,13 @@ g(\theta, \phi, \kappa \mid n, N) = \frac{f(n,N\mid \theta)\,\left(
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../lessons/hierarchical/modeling_repeated_experiments.html" class="pagination-link" aria-label="Modeling repeated experiments">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Modeling repeated experiments</span></span>
+      <a href="../../exercises/optimization_exercises/spike_intervals_optim.html" class="pagination-link" aria-label="Optimization and spiking">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">83</span>&nbsp; <span class="chapter-title">Optimization and spiking</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="pagination-link" aria-label="Implementation of hierarchical models">
-        <span class="nav-page-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../appendices/notation.html" class="pagination-link" aria-label="Notation">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Notation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
