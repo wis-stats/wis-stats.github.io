@@ -2,530 +2,530 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wis-stats.github.io/index.html</loc>
-    <lastmod>2025-08-31T21:04:24.607Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.335Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/what_are_we_doing/what_are_we_doing.html</loc>
-    <lastmod>2025-08-31T21:04:24.838Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.578Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/exploratory/polars.html</loc>
-    <lastmod>2025-08-31T21:04:24.989Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.744Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/exploratory/intro_to_polars.html</loc>
-    <lastmod>2025-08-31T21:04:34.328Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.930Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/exploratory/tidy_data.html</loc>
-    <lastmod>2025-08-31T21:04:34.329Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.933Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/exploratory/polars_for_pandas.html</loc>
-    <lastmod>2025-08-31T21:04:34.769Z</lastmod>
+    <lastmod>2025-09-02T05:30:24.349Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/exploratory/plotting.html</loc>
-    <lastmod>2025-08-31T21:04:24.992Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.749Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/exploratory/plotting_with_bokeh.html</loc>
-    <lastmod>2025-08-31T21:04:34.326Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.929Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/exploratory/iqplot.html</loc>
-    <lastmod>2025-08-31T21:04:34.324Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.926Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/exploratory/styling_bokeh.html</loc>
-    <lastmod>2025-08-31T21:04:34.353Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.956Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/exploratory/overplotting.html</loc>
-    <lastmod>2025-08-31T21:04:34.351Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.953Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/probability/probability.html</loc>
-    <lastmod>2025-08-31T21:04:24.709Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.476Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/probability/probability_logic_of_science.html</loc>
-    <lastmod>2025-08-31T21:04:24.707Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.472Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/probability/probability_distributions.html</loc>
-    <lastmod>2025-08-31T21:04:24.716Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.484Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/probability/entropy_and_kullback_leibler.html</loc>
-    <lastmod>2025-08-31T21:04:24.714Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.483Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/sampling.html</loc>
-    <lastmod>2025-08-31T21:04:24.822Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.557Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/random_number_generation.html</loc>
-    <lastmod>2025-08-31T21:04:34.280Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.879Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/rng_with_numpy.html</loc>
-    <lastmod>2025-08-31T21:04:34.269Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.863Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/simulation.html</loc>
-    <lastmod>2025-08-31T21:04:24.822Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.555Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/luria_delbruck.html</loc>
-    <lastmod>2025-08-31T21:04:34.276Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.875Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/lif.html</loc>
-    <lastmod>2025-08-31T21:04:34.297Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.895Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/nonhomogeneous_poisson.html</loc>
-    <lastmod>2025-08-31T21:04:34.275Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.873Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/mcmc.html</loc>
-    <lastmod>2025-08-31T21:04:24.815Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.546Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/basics_of_mcmc.html</loc>
-    <lastmod>2025-08-31T21:04:24.819Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.551Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/stan_hello_world.html</loc>
-    <lastmod>2025-08-31T21:04:34.273Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.872Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/sampling/nonhomogeneous_poisson_stan.html</loc>
-    <lastmod>2025-08-31T21:04:34.279Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.877Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/bayesian_modeling/bayesian_modeling.html</loc>
-    <lastmod>2025-08-31T21:04:30.284Z</lastmod>
+    <lastmod>2025-09-02T05:30:19.929Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/bayesian_modeling/basics_of_bayes.html</loc>
-    <lastmod>2025-08-31T21:04:30.285Z</lastmod>
+    <lastmod>2025-09-02T05:30:19.929Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/bayesian_modeling/conjugacy.html</loc>
-    <lastmod>2025-08-31T21:04:35.349Z</lastmod>
+    <lastmod>2025-09-02T05:30:24.887Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/bayesian_modeling/choice_of_prior.html</loc>
-    <lastmod>2025-08-31T21:04:30.283Z</lastmod>
+    <lastmod>2025-09-02T05:30:19.927Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/bayesian_modeling/stats_ml_ai.html</loc>
-    <lastmod>2025-08-31T21:04:30.283Z</lastmod>
+    <lastmod>2025-09-02T05:30:19.928Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/bayesian_modeling/bayes_model_for_learning_and_cognition.html</loc>
-    <lastmod>2025-08-31T21:04:30.281Z</lastmod>
+    <lastmod>2025-09-02T05:30:19.926Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/bayesian_modeling/prior_predictive_checks.html</loc>
-    <lastmod>2025-08-31T21:04:35.347Z</lastmod>
+    <lastmod>2025-09-02T05:30:24.884Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/inference_by_mcmc/inference_by_mcmc.html</loc>
-    <lastmod>2025-08-31T21:04:24.846Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.583Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/inference_by_mcmc/parameter_estimation_with_mcmc_1.html</loc>
-    <lastmod>2025-08-31T21:04:34.309Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.907Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/inference_by_mcmc/posterior_summaries.html</loc>
-    <lastmod>2025-08-31T21:04:34.299Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.898Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/inference_by_mcmc/posterior_predictive_checks.html</loc>
-    <lastmod>2025-08-31T21:04:34.301Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.901Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/mixture_models/mixture_models.html</loc>
-    <lastmod>2025-08-31T21:04:24.794Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.532Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/mixture_models/mixture_model_stan.html</loc>
-    <lastmod>2025-08-31T21:04:34.252Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.846Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/principled/principled.html</loc>
-    <lastmod>2025-08-31T21:04:24.757Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.502Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/principled/mcmc_diagnostics.html</loc>
-    <lastmod>2025-08-31T21:04:34.204Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.799Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/principled/sbc.html</loc>
-    <lastmod>2025-08-31T21:04:34.205Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.800Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/principled/sbc_in_practice.html</loc>
-    <lastmod>2025-08-31T21:04:34.234Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.828Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/model_assessment/model_assessment.html</loc>
-    <lastmod>2025-08-31T21:04:30.256Z</lastmod>
+    <lastmod>2025-09-02T05:30:19.899Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/model_assessment/model_comparison.html</loc>
-    <lastmod>2025-08-31T21:04:30.257Z</lastmod>
+    <lastmod>2025-09-02T05:30:19.900Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/model_assessment/model_comparison_in_practice.html</loc>
-    <lastmod>2025-08-31T21:04:35.279Z</lastmod>
+    <lastmod>2025-09-02T05:30:24.821Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/optimization/optimization.html</loc>
-    <lastmod>2025-08-31T21:04:24.728Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.486Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/optimization/optimization_basics.html</loc>
-    <lastmod>2025-08-31T21:04:34.177Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.767Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/optimization/gamma_optimization.html</loc>
-    <lastmod>2025-08-31T21:04:34.181Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.771Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/optimization/mm_algorithms.html</loc>
-    <lastmod>2025-08-31T21:04:24.717Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.484Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/optimization/em_algorithm.html</loc>
-    <lastmod>2025-08-31T21:04:24.735Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/optimization/em_gmm.html</loc>
-    <lastmod>2025-08-31T21:04:24.737Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/optimization/em_gmm_example.html</loc>
-    <lastmod>2025-08-31T21:04:34.185Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.777Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/optimization/kmeans.html</loc>
-    <lastmod>2025-08-31T21:04:34.188Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.782Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/variate_covariate/intro_variate_covariate.html</loc>
-    <lastmod>2025-08-31T21:04:24.849Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.588Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/variate_covariate/model_building.html</loc>
-    <lastmod>2025-08-31T21:04:24.847Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.585Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/variate_covariate/variate_covariate_with_stan.html</loc>
-    <lastmod>2025-08-31T21:04:34.313Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.913Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/hierarchical/hierarchical.html</loc>
-    <lastmod>2025-08-31T21:04:24.684Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.442Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/hierarchical/modeling_repeated_experiments.html</loc>
-    <lastmod>2025-08-31T21:04:34.130Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.719Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/hierarchical/choosing_a_hierarchical_prior.html</loc>
-    <lastmod>2025-08-31T21:04:34.131Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.721Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/hierarchical/hierarchical_implementation.html</loc>
-    <lastmod>2025-08-31T21:04:34.170Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.760Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/hierarchical/generalization.html</loc>
-    <lastmod>2025-08-31T21:04:34.171Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.762Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/hierarchical/hierarchical_implementation_worms.html</loc>
-    <lastmod>2025-08-31T21:04:34.129Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.718Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/pca_and_related/pca_and_related.html</loc>
-    <lastmod>2025-08-31T21:04:24.638Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.367Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/pca_and_related/heuristic_pca.html</loc>
-    <lastmod>2025-08-31T21:04:33.915Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.488Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/pca_and_related/factor_analysis.html</loc>
-    <lastmod>2025-08-31T21:04:34.121Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.709Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/pca_and_related/pca_nmf_as_fa.html</loc>
-    <lastmod>2025-08-31T21:04:24.640Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.368Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/HMM/hmm.html</loc>
-    <lastmod>2025-08-31T21:04:25.005Z</lastmod>
+    <lastmod>2025-09-02T05:30:14.763Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/HMM/hmm_gaussian_emission.html</loc>
-    <lastmod>2025-08-31T21:04:34.797Z</lastmod>
+    <lastmod>2025-09-02T05:30:24.366Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/GLM/glm.html</loc>
-    <lastmod>2025-08-31T21:04:30.119Z</lastmod>
+    <lastmod>2025-09-02T05:30:19.750Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/GLM/glm_intro.html</loc>
-    <lastmod>2025-08-31T21:04:30.119Z</lastmod>
+    <lastmod>2025-09-02T05:30:19.750Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/lessons/GLM/glm_in_practice.html</loc>
-    <lastmod>2025-08-31T21:04:35.064Z</lastmod>
+    <lastmod>2025-09-02T05:30:24.603Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/polars_exercises/polars_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.433Z</lastmod>
+    <lastmod>2025-09-02T05:30:20.077Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/polars_exercises/frog_tongue_1.html</loc>
-    <lastmod>2025-08-31T21:04:33.700Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.275Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/polars_exercises/frog_tongue_2.html</loc>
-    <lastmod>2025-08-31T21:04:33.700Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.275Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/polars_exercises/frog_tongue_3.html</loc>
-    <lastmod>2025-08-31T21:04:33.700Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.275Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/polars_exercises/palmer_penguins.html</loc>
-    <lastmod>2025-08-31T21:04:33.700Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.274Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/viz_exercises/viz_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.447Z</lastmod>
+    <lastmod>2025-09-02T05:30:20.094Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/viz_exercises/palmer_penguins_plot.html</loc>
-    <lastmod>2025-08-31T21:04:33.702Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.277Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/viz_exercises/mt_catastrophe_ecdfs.html</loc>
-    <lastmod>2025-08-31T21:04:33.702Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.277Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/viz_exercises/finches_plotting.html</loc>
-    <lastmod>2025-08-31T21:04:33.703Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.278Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/probability_exercises/probability_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.438Z</lastmod>
+    <lastmod>2025-09-02T05:30:20.082Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/probability_exercises/distribution_stories.html</loc>
-    <lastmod>2025-08-31T21:04:33.701Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.275Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/probability_exercises/two_step_mt_catastrophe.html</loc>
-    <lastmod>2025-08-31T21:04:33.701Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.276Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/probability_exercises/censored_and_truncated.html</loc>
-    <lastmod>2025-08-31T21:04:33.701Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.276Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/probability_exercises/isi_distributions.html</loc>
-    <lastmod>2025-08-31T21:04:33.701Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.276Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/probability_exercises/normal_approx.html</loc>
-    <lastmod>2025-08-31T21:04:33.701Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.276Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/sampling_exercises/sampling_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.432Z</lastmod>
+    <lastmod>2025-09-02T05:30:20.075Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/sampling_exercises/practice_sampling.html</loc>
-    <lastmod>2025-08-31T21:04:33.699Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.274Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/sampling_exercises/heavy_tails.html</loc>
-    <lastmod>2025-08-31T21:04:33.699Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.274Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/sampling_exercises/two_step_mt_catastrophe_sampling.html</loc>
-    <lastmod>2025-08-31T21:04:33.699Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.273Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/sampling_exercises/refractory_isi.html</loc>
-    <lastmod>2025-08-31T21:04:33.698Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.273Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/intro_mcmc_exercises/intro_mcmc_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.428Z</lastmod>
+    <lastmod>2025-09-02T05:30:20.069Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/intro_mcmc_exercises/sample_bivariate_normal.html</loc>
-    <lastmod>2025-08-31T21:04:33.698Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.273Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/intro_mcmc_exercises/funnel_of_hell.html</loc>
-    <lastmod>2025-08-31T21:04:33.698Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.272Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/bayesian_modeling_exercises/bayesian_modeling_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.414Z</lastmod>
+    <lastmod>2025-09-02T05:30:20.053Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/bayesian_modeling_exercises/carrion_beetles.html</loc>
-    <lastmod>2025-08-31T21:04:33.690Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.264Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/bayesian_modeling_exercises/inverse_gaussian_spiking_ppc.html</loc>
-    <lastmod>2025-08-31T21:04:33.690Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.264Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/bayesian_modeling_exercises/exp_gamma_conj.html</loc>
-    <lastmod>2025-08-31T21:04:33.690Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.264Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/bayesian_modeling_exercises/changepoint_model.html</loc>
-    <lastmod>2025-08-31T21:04:33.691Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.264Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/inference_with_mcmc_exercises/inference_with_mcmc_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.376Z</lastmod>
+    <lastmod>2025-09-02T05:30:20.016Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/inference_with_mcmc_exercises/boolean_sampling.html</loc>
-    <lastmod>2025-08-31T21:04:33.689Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.263Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/inference_with_mcmc_exercises/mt_catastrophe_models.html</loc>
-    <lastmod>2025-08-31T21:04:33.688Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.262Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/inference_with_mcmc_exercises/heavy_tails_outliers.html</loc>
-    <lastmod>2025-08-31T21:04:33.688Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.262Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/inference_with_mcmc_exercises/changepoint_sampling.html</loc>
-    <lastmod>2025-08-31T21:04:33.688Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.262Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/variate_covariate_exercises/variate_covariate_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.446Z</lastmod>
+    <lastmod>2025-09-02T05:30:20.093Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/variate_covariate_exercises/dissociation_anisotropy.html</loc>
-    <lastmod>2025-08-31T21:04:33.702Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.277Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/variate_covariate_exercises/acetylcholine_receptor.html</loc>
-    <lastmod>2025-08-31T21:04:33.702Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.277Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/model_assessment_exercises/model_assessment_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.354Z</lastmod>
+    <lastmod>2025-09-02T05:30:19.994Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/model_assessment_exercises/normals_with_same_mean.html</loc>
-    <lastmod>2025-08-31T21:04:33.687Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.260Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/model_assessment_exercises/mt_catastrophe_model_assessment.html</loc>
-    <lastmod>2025-08-31T21:04:33.687Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.261Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/optimization_exercises/optimization_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.371Z</lastmod>
+    <lastmod>2025-09-02T05:30:20.010Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/optimization_exercises/spike_intervals_optim.html</loc>
-    <lastmod>2025-08-31T21:04:33.687Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.261Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/optimization_exercises/heavy_tails_outliers_optim.html</loc>
-    <lastmod>2025-08-31T21:04:33.687Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.262Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/hierarchical_exercises/hierarchical_exercises.html</loc>
-    <lastmod>2025-08-31T21:04:30.412Z</lastmod>
+    <lastmod>2025-09-02T05:30:20.050Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/hierarchical_exercises/noise_in_gene_expression.html</loc>
-    <lastmod>2025-08-31T21:04:33.689Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.263Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/hierarchical_exercises/hier_in_plain_sight.html</loc>
-    <lastmod>2025-08-31T21:04:33.690Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.263Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/exercises/hierarchical_exercises/pole_descent.html</loc>
-    <lastmod>2025-08-31T21:04:33.689Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.263Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/notation.html</loc>
-    <lastmod>2025-08-31T21:04:33.515Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.101Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/setting_up_python_computing_environment.html</loc>
-    <lastmod>2025-08-31T21:04:33.671Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.246Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/hello_world.html</loc>
-    <lastmod>2025-08-31T21:04:33.680Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.254Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/variables_operators_types.html</loc>
-    <lastmod>2025-08-31T21:04:33.680Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.254Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/lists_and_tuples.html</loc>
-    <lastmod>2025-08-31T21:04:33.678Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.252Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/iteration.html</loc>
-    <lastmod>2025-08-31T21:04:33.675Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.249Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/intro_to_functions.html</loc>
-    <lastmod>2025-08-31T21:04:33.684Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.258Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/string_methods.html</loc>
-    <lastmod>2025-08-31T21:04:33.674Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.248Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/dictionaries.html</loc>
-    <lastmod>2025-08-31T21:04:33.683Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.257Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/comprehensions.html</loc>
-    <lastmod>2025-08-31T21:04:33.681Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.255Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/packages_and_modules.html</loc>
-    <lastmod>2025-08-31T21:04:33.672Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.247Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/exceptions_and_error_handling.html</loc>
-    <lastmod>2025-08-31T21:04:33.684Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.258Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/file_io.html</loc>
-    <lastmod>2025-08-31T21:04:33.681Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.255Z</lastmod>
   </url>
   <url>
     <loc>https://wis-stats.github.io/appendices/python/intro_to_numpy_and_scipy.html</loc>
-    <lastmod>2025-08-31T21:04:33.682Z</lastmod>
+    <lastmod>2025-09-02T05:30:23.256Z</lastmod>
   </url>
 </urlset>
