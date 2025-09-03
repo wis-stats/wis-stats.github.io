@@ -1568,8 +1568,8 @@ function(Bokeh) {
 </div>
 <p><br></p>
 <ul>
-<li>Level 0: This level has the hyperparameters <span class="math inline">\(\theta\)</span> and <span class="math inline">\(\sigma\)</span>, the location and scale parameters of fluorescence intensity typical of an <em>E. coli</em> cell expressing the fluorescent gene of interest. These are the parameters we ultimately wish to get estimates for.</li>
-<li>Level 1 corresponds to the day the experiment was performed. There will be variability from day to day, and the location and scale parameters for a given day are conditioned on the hyperparameters, but can vary from the parameters of other days.</li>
+<li>Level 0: This level has the hyperparameters <span class="math inline">\(\theta\)</span> and <span class="math inline">\(\tau\)</span>, the location and scale parameters of fluorescence intensity typical of an <em>E. coli</em> cell expressing the fluorescent gene of interest. These are the parameters we ultimately wish to get estimates for.</li>
+<li>Level 1 corresponds to the day the experiment was performed. There will be variability from day to day, and the location and scale parameters (though, in the model below, we will consider the scale parameter to be the same for all conditional priors) for a given day are conditioned on the hyperparameters, but can vary from the parameters of other days.</li>
 <li>Level 2 corresponds to which batch of cells were used on a given day.</li>
 <li>Level 3 corresponds to the colony of cells chosen from the batch.</li>
 </ul>
