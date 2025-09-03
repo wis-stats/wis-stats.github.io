@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>47&nbsp; Generalization of hierarchical models – Statistical Inference at WIS</title>
+<title>46&nbsp; Generalization of hierarchical models – Statistical Inference at WIS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../lessons/hierarchical/hierarchical_implementation_worms.html" rel="next">
-<link href="../../lessons/hierarchical/hierarchical_implementation.html" rel="prev">
+<link href="../../lessons/hierarchical/choosing_a_hierarchical_prior.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -113,7 +113,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/generalization.html"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/generalization.html"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -571,20 +571,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/generalization.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/hierarchical_implementation_worms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">General implementation of hierarchical models</span></span></a>
   </div>
 </li>
       </ul>
@@ -1117,9 +1117,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/generalization.html"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/generalization.html"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-generalization-of-hierarchical" class="quarto-section-identifier"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></h1>
+<h1 class="title"><span id="sec-generalization-of-hierarchical" class="quarto-section-identifier"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></h1>
 </div>
 
 
@@ -1552,13 +1552,13 @@ g(\theta, \phi, \xi \mid y) = \frac{f(y\mid \theta)\, g(\theta \mid \phi)\,g(\ph
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="pagination-link" aria-label="Implementation of hierarchical models">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></span>
+      <a href="../../lessons/hierarchical/choosing_a_hierarchical_prior.html" class="pagination-link" aria-label="Choosing a hierarchical prior">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Choosing a hierarchical prior</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../lessons/hierarchical/hierarchical_implementation_worms.html" class="pagination-link" aria-label="Implementation of a hierarchical model">
-        <span class="nav-page-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

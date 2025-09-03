@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>46&nbsp; Implementation of hierarchical models – Statistical Inference at WIS</title>
+<title>48&nbsp; General implementation of hierarchical models – Statistical Inference at WIS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../lessons/hierarchical/generalization.html" rel="next">
-<link href="../../lessons/hierarchical/choosing_a_hierarchical_prior.html" rel="prev">
+<link href="../../lessons/pca_and_related/pca_and_related.html" rel="next">
+<link href="../../lessons/hierarchical/hierarchical_implementation_worms.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -152,7 +152,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical_implementation.html"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical_implementation.html"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">General implementation of hierarchical models</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -610,20 +610,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/generalization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/hierarchical_implementation_worms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">General implementation of hierarchical models</span></span></a>
   </div>
 </li>
       </ul>
@@ -1155,19 +1155,19 @@ window.Quarto = {
     <h2 id="toc-title">In this section</h2>
    
   <ul class="collapse">
-  <li><a href="#hierarchical-model-structure" id="toc-hierarchical-model-structure" class="nav-link active" data-scroll-target="#hierarchical-model-structure"><span class="header-section-number">46.1</span> Hierarchical model structure</a></li>
-  <li><a href="#coding-up-the-hierarchical-model-in-stan" id="toc-coding-up-the-hierarchical-model-in-stan" class="nav-link" data-scroll-target="#coding-up-the-hierarchical-model-in-stan"><span class="header-section-number">46.2</span> Coding up the hierarchical model in Stan</a></li>
-  <li><a href="#a-noncentered-parametrization" id="toc-a-noncentered-parametrization" class="nav-link" data-scroll-target="#a-noncentered-parametrization"><span class="header-section-number">46.3</span> A noncentered parametrization</a></li>
-  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions"><span class="header-section-number">46.4</span> Conclusions</a></li>
+  <li><a href="#hierarchical-model-structure" id="toc-hierarchical-model-structure" class="nav-link active" data-scroll-target="#hierarchical-model-structure"><span class="header-section-number">48.1</span> Hierarchical model structure</a></li>
+  <li><a href="#coding-up-the-hierarchical-model-in-stan" id="toc-coding-up-the-hierarchical-model-in-stan" class="nav-link" data-scroll-target="#coding-up-the-hierarchical-model-in-stan"><span class="header-section-number">48.2</span> Coding up the hierarchical model in Stan</a></li>
+  <li><a href="#a-noncentered-parametrization" id="toc-a-noncentered-parametrization" class="nav-link" data-scroll-target="#a-noncentered-parametrization"><span class="header-section-number">48.3</span> A noncentered parametrization</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions"><span class="header-section-number">48.4</span> Conclusions</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical_implementation.html"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical_implementation.html"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">General implementation of hierarchical models</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-implementation-hierarchical" class="quarto-section-identifier"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></span></h1>
+<h1 class="title"><span id="sec-implementation-hierarchical" class="quarto-section-identifier"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">General implementation of hierarchical models</span></span></h1>
 </div>
 
 
@@ -1186,7 +1186,9 @@ window.Quarto = {
 
 <p><a href="https://colab.research.google.com/github/wis-stats/wis_stats_notebooks_2025/blob/main/hierarchical_implementation.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Google Colab" title="Open in Google Colab"></a> | <a href="https://colab.research.google.com/github/wis-stats/wis_stats_notebooks_2025/blob/main/hierarchical_implementation.ipynb">Download notebook</a></p>
 <hr>
-<div id="cell-1" class="cell" data-nbsphinx="hidden" data-tags="[]" data-execution_count="1">
+<div id="cell-1" class="cell" data-nbsphinx="hidden" data-tags="[]">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Colab setup ------------------</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os, shutil, sys, subprocess, urllib.request</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"google.colab"</span> <span class="kw">in</span> sys.modules:</span>
@@ -1204,6 +1206,7 @@ window.Quarto = {
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    data_path <span class="op">=</span> <span class="st">"../data/"</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># ------------------------------</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <div id="cell-2" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> io</span>
@@ -1552,8 +1555,8 @@ function(Bokeh) {
 </div>
 <hr>
 <p>We have learned about how to construct hierarchical models and how to sample from the resulting posterior distribution. In this lesson, we will dig a bit deeper and address some of the challenges in sampling out of hierarchical models.</p>
-<section id="hierarchical-model-structure" class="level2 page-columns page-full" data-number="46.1">
-<h2 data-number="46.1" class="anchored" data-anchor-id="hierarchical-model-structure"><span class="header-section-number">46.1</span> Hierarchical model structure</h2>
+<section id="hierarchical-model-structure" class="level2 page-columns page-full" data-number="48.1">
+<h2 data-number="48.1" class="anchored" data-anchor-id="hierarchical-model-structure"><span class="header-section-number">48.1</span> Hierarchical model structure</h2>
 <p>To think about the structure of hierarchical models, we will consider the following experimental design. We are measuring fluorescent intensity of a reporter of gene expression in <em>E. coli</em> cells. One Monday, we prepare four batches of <em>E. coli</em> and grow them up on plates. From each plate, we select colonies. We then mount a slide with a selection from a given colony and use fluorescence microscopy to determine the fluorescence level of individual cells. We do a similar experiment on Wednesday, and then another on Thursday. We model the measured fluorescence values as Normally distributed.</p>
 <p>There is a hierarchical structure here, depicted below.</p>
 <p><br></p>
@@ -1616,8 +1619,8 @@ function(Bokeh) {
 <p>Here, we have defined the measurements as <span class="math inline">\(y\)</span>, and we have implied that the appropriate conditioning on which specific hyperparameters (as given by index 1, index 2, and index 3 defined above) is considered.</p>
 <p>This method of organization is useful to keep conditioning straight in hierarchical models. As we will see momentarily, it is also convenient for implementing a hierarchical model in Stan.</p>
 </section>
-<section id="coding-up-the-hierarchical-model-in-stan" class="level2" data-number="46.2">
-<h2 data-number="46.2" class="anchored" data-anchor-id="coding-up-the-hierarchical-model-in-stan"><span class="header-section-number">46.2</span> Coding up the hierarchical model in Stan</h2>
+<section id="coding-up-the-hierarchical-model-in-stan" class="level2" data-number="48.2">
+<h2 data-number="48.2" class="anchored" data-anchor-id="coding-up-the-hierarchical-model-in-stan"><span class="header-section-number">48.2</span> Coding up the hierarchical model in Stan</h2>
 <p>Provided we can define arrays for index 1, index 2, and index 3, coding the model up in Stan is surprisingly straightforward. To start, we will use a centered parametrization for clarity. (We will see the problems this causes with sampling momentarily.) Here is a Stan code for the hierarchical model.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode stan code-with-copy"><code class="sourceCode stan"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">data</span> {</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Total number of data points</span></span>
@@ -1669,8 +1672,8 @@ function(Bokeh) {
 <span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>  y ~ normal(theta_3[index_3], sigma);</span>
 <span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Be sure to carefully read the Stan code. Importantly, note that <code>theta_1</code>,<code>theta_2</code>, and <code>theta_3</code> are vector valued. Note also that we use indexing to specify which parameters correspond to which day, batch, and colony. In studying the code and the model above, you should be able to see how the hierarchical model is built in Stan.</p>
-<section id="a-quick-aside-generating-a-data-set" class="level3" data-number="46.2.1">
-<h3 data-number="46.2.1" class="anchored" data-anchor-id="a-quick-aside-generating-a-data-set"><span class="header-section-number">46.2.1</span> A quick aside: generating a data set</h3>
+<section id="a-quick-aside-generating-a-data-set" class="level3" data-number="48.2.1">
+<h3 data-number="48.2.1" class="anchored" data-anchor-id="a-quick-aside-generating-a-data-set"><span class="header-section-number">48.2.1</span> A quick aside: generating a data set</h3>
 <p>I will now generate a tidy data frame containing a data set to analyze with this hierarchical model. These are fabricated data, hence the weird loading with a string (for compactness so we don’t have a big code cell).</p>
 <div id="cell-7" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>data_str <span class="op">=</span> <span class="st">""</span>.join(</span>
@@ -1802,8 +1805,8 @@ function(Bokeh) {
 </div>
 </div>
 </section>
-<section id="generating-input-data-for-stan" class="level3" data-number="46.2.2">
-<h3 data-number="46.2.2" class="anchored" data-anchor-id="generating-input-data-for-stan"><span class="header-section-number">46.2.2</span> Generating input data for Stan</h3>
+<section id="generating-input-data-for-stan" class="level3" data-number="48.2.2">
+<h3 data-number="48.2.2" class="anchored" data-anchor-id="generating-input-data-for-stan"><span class="header-section-number">48.2.2</span> Generating input data for Stan</h3>
 <p>We should now convert the data frame into a data dictionary that Stan likes, adhering to our more general hierarchical model specification above, i.e., replacing <code>'day'</code> with <code>'index_1'</code>, <code>'batch'</code> with <code>'index_2'</code> and <code>'colony'</code> with <code>'index_3'</code>. Importantly, we should update the original data frame to include these indices (which will be included in Stan’s output) that match the respective categorical parameters in the original data set. The function <code>bebi103.stan.df_to_datadict_hier()</code> does this. You need to specify the tidy data frame you want to convey, the columns of the data frame corresponding to the levels of the hierarchy <em>in order of the hierarchy</em>, and the column(s) that have the measured data.</p>
 <div id="cell-11" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>data, df <span class="op">=</span> bebi103.stan.df_to_datadict_hier(</span>
@@ -1970,8 +1973,8 @@ function(Bokeh) {
 </div>
 <p>We now have the necessary data for Stan’s sampler.</p>
 </section>
-<section id="drawing-samples-and-checking-diagnostics" class="level3" data-number="46.2.3">
-<h3 data-number="46.2.3" class="anchored" data-anchor-id="drawing-samples-and-checking-diagnostics"><span class="header-section-number">46.2.3</span> Drawing samples and checking diagnostics</h3>
+<section id="drawing-samples-and-checking-diagnostics" class="level3" data-number="48.2.3">
+<h3 data-number="48.2.3" class="anchored" data-anchor-id="drawing-samples-and-checking-diagnostics"><span class="header-section-number">48.2.3</span> Drawing samples and checking diagnostics</h3>
 <p>So, let’s sample and see what we get!</p>
 <div id="cell-16" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> bebi103.stan.disable_logging():</span>
@@ -2122,8 +2125,8 @@ Chain 3: E-BFMI = 0.07573497349280298
 <p>Looking at the <code>tau</code> versus <code>theta</code> plot, we see that the divergences are for small <code>tau</code>. Zooming in on the bottom of that plot shows that the sampler is hitting the entry to a funnel; it cannot sample down to <code>tau</code> values close to zero. We can possibly alleviate this problem by <strong>uncentering</strong> the model.</p>
 </section>
 </section>
-<section id="a-noncentered-parametrization" class="level2" data-number="46.3">
-<h2 data-number="46.3" class="anchored" data-anchor-id="a-noncentered-parametrization"><span class="header-section-number">46.3</span> A noncentered parametrization</h2>
+<section id="a-noncentered-parametrization" class="level2" data-number="48.3">
+<h2 data-number="48.3" class="anchored" data-anchor-id="a-noncentered-parametrization"><span class="header-section-number">48.3</span> A noncentered parametrization</h2>
 <p>To uncenter the model, we reparametrize our model as follows.</p>
 <p><span class="math display">\[\begin{align}
 &amp;\theta \sim \text{Norm}(10, 3) \\[1em]
@@ -2383,8 +2386,8 @@ E-BFMI indicated no pathological behavior.</code></pre>
 </div>
 <p>We have much better sampling for low <span class="math inline">\(\tau\)</span>. Let’s think for a moment about why this is important. A large value of <span class="math inline">\(\tau\)</span> means that the parameters governing the outcomes of the respective experiments are essentially independent. A small value of <span class="math inline">\(\tau\)</span> means that the parameters governing the experiments are all nearly the same. Thus, small <span class="math inline">\(\tau\)</span> corresponds to pooling all of the results together in a single data set. So, you can think of <span class="math inline">\(\tau\)</span> like a slider; small <span class="math inline">\(\tau\)</span> gives the extreme model where the experiments are all pooled together, and large <span class="math inline">\(\tau\)</span> gives the opposite extreme, where the experiments are all independent. The whole point of using a hierarchical model is to capture all of the possible behavior between (and including) these two extremes. If we cannot effectively sample <span class="math inline">\(\tau\)</span>, we are not capturing the possible structure of the data set.</p>
 </section>
-<section id="conclusions" class="level2" data-number="46.4">
-<h2 data-number="46.4" class="anchored" data-anchor-id="conclusions"><span class="header-section-number">46.4</span> Conclusions</h2>
+<section id="conclusions" class="level2" data-number="48.4">
+<h2 data-number="48.4" class="anchored" data-anchor-id="conclusions"><span class="header-section-number">48.4</span> Conclusions</h2>
 <p>Hierarchical modeling presents special challenges for samplers. There are tricks we can do to improve the performance of HMC samplers in exploring the parameter space, such as using noncentered parametrizations and encouraging the sampler to take smaller steps by tuning the <code>adapt_delta</code> parameter. Importantly, though, you should carefully check the diagnostics of your sampler. This is true even if you are not working with a hierarchical model.</p>
 <div id="cell-36" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>bebi103.stan.clean_cmdstan()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2816,13 +2819,13 @@ cmdstan   : 2.36.0</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../lessons/hierarchical/choosing_a_hierarchical_prior.html" class="pagination-link" aria-label="Choosing a hierarchical prior">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Choosing a hierarchical prior</span></span>
+      <a href="../../lessons/hierarchical/hierarchical_implementation_worms.html" class="pagination-link" aria-label="Implementation of a hierarchical model">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../lessons/hierarchical/generalization.html" class="pagination-link" aria-label="Generalization of hierarchical models">
-        <span class="nav-page-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../lessons/pca_and_related/pca_and_related.html" class="pagination-link" aria-label="Principal component analysis and related models">
+        <span class="nav-page-text">Principal component analysis and related models</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

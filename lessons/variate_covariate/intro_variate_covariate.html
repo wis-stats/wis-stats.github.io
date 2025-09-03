@@ -571,20 +571,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/generalization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/hierarchical_implementation_worms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">General implementation of hierarchical models</span></span></a>
   </div>
 </li>
       </ul>
@@ -1138,7 +1138,7 @@ window.Quarto = {
 
 <p>Consider a titration experiment to determine the dissociation constant of binding partners A and B. The total concentration of B, <span class="math inline">\(c_\mathrm{B}^0\)</span> is held constant while the total concentration of A, <span class="math inline">\(c_\mathrm{A}^0\)</span>, is varied. The equilibrium concentration of the duplex AB, <span class="math inline">\(c_\mathrm{AB}\)</span>, is measured for each value of <span class="math inline">\(c_\mathrm{A}^0\)</span>. For the reaction AB ⇌ A + B with dissociation constant <span class="math inline">\(K_d\)</span>, we can solve for the concentration of the AB duplex using the equation</p>
 <p><span class="math display">\[\begin{align}
-K_d = \frac{c_\mathrm{A}\,c_\mathrm{B}}{c_\mathrm{AB}} = \frac{(c_\mathrm{A}^0 - c_\mathrm{AB})\,(c_\mathrm{A}^0 - c_\mathrm{AB})}{c_\mathrm{AB}},
+K_d = \frac{c_\mathrm{A}\,c_\mathrm{B}}{c_\mathrm{AB}} = \frac{(c_\mathrm{A}^0 - c_\mathrm{AB})\,(c_\mathrm{B}^0 - c_\mathrm{AB})}{c_\mathrm{AB}},
 \end{align}
 \]</span></p>
 <p>which is solved to give</p>

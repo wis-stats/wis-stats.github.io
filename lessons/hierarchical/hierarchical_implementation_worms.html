@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>48&nbsp; Implementation of a hierarchical model – Statistical Inference at WIS</title>
+<title>47&nbsp; Implementation of a hierarchical model – Statistical Inference at WIS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../lessons/pca_and_related/pca_and_related.html" rel="next">
+<link href="../../lessons/hierarchical/hierarchical_implementation.html" rel="next">
 <link href="../../lessons/hierarchical/generalization.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -152,7 +152,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical_implementation_worms.html"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical_implementation_worms.html"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -610,20 +610,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Implementation of hierarchical models</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/generalization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../lessons/hierarchical/hierarchical_implementation_worms.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">General implementation of hierarchical models</span></span></a>
   </div>
 </li>
       </ul>
@@ -1155,16 +1155,16 @@ window.Quarto = {
     <h2 id="toc-title">In this section</h2>
    
   <ul class="collapse">
-  <li><a href="#computing-environment" id="toc-computing-environment" class="nav-link active" data-scroll-target="#computing-environment"><span class="header-section-number">48.1</span> Computing environment</a></li>
+  <li><a href="#computing-environment" id="toc-computing-environment" class="nav-link active" data-scroll-target="#computing-environment"><span class="header-section-number">47.1</span> Computing environment</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical_implementation_worms.html"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical.html">Hierarchical models</a></li><li class="breadcrumb-item"><a href="../../lessons/hierarchical/hierarchical_implementation_worms.html"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-hierarchical-implementation-worms" class="quarto-section-identifier"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></h1>
+<h1 class="title"><span id="sec-hierarchical-implementation-worms" class="quarto-section-identifier"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Implementation of a hierarchical model</span></span></h1>
 </div>
 
 
@@ -1183,7 +1183,9 @@ window.Quarto = {
 
 <p><a href="https://colab.research.google.com/github/wis-stats/wis_stats_notebooks_2025/blob/main/hierarchical_implementation_worms.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Google Colab" title="Open in Google Colab"></a> | <a href="https://colab.research.google.com/github/wis-stats/wis_stats_notebooks_2025/blob/main/hierarchical_implementation_worms.ipynb">Download notebook</a></p>
 <hr>
-<div id="cell-1" class="cell" data-nbsphinx="hidden" data-tags="[]" data-execution_count="1">
+<div id="cell-1" class="cell" data-nbsphinx="hidden" data-tags="[]">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Colab setup ------------------</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os, shutil, sys, subprocess, urllib.request</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">"google.colab"</span> <span class="kw">in</span> sys.modules:</span>
@@ -1201,6 +1203,7 @@ window.Quarto = {
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    data_path <span class="op">=</span> <span class="st">"../data/"</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># ------------------------------</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <div id="cell-2" class="cell" data-tags="[]" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1777,8 +1780,8 @@ E-BFMI indicated no pathological behavior.</code></pre>
 <div id="cell-13" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>bebi103.stan.clean_cmdstan()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="computing-environment" class="level2" data-number="48.1">
-<h2 data-number="48.1" class="anchored" data-anchor-id="computing-environment"><span class="header-section-number">48.1</span> Computing environment</h2>
+<section id="computing-environment" class="level2" data-number="47.1">
+<h2 data-number="47.1" class="anchored" data-anchor-id="computing-environment"><span class="header-section-number">47.1</span> Computing environment</h2>
 <div id="cell-15" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>load_ext watermark</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>watermark <span class="op">-</span>v <span class="op">-</span>p numpy,cmdstanpy,arviz,iqplot,bebi103,bokeh,jupyterlab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2204,12 +2207,12 @@ jupyterlab: 4.3.7
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../lessons/hierarchical/generalization.html" class="pagination-link" aria-label="Generalization of hierarchical models">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Generalization of hierarchical models</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../lessons/pca_and_related/pca_and_related.html" class="pagination-link" aria-label="Principal component analysis and related models">
-        <span class="nav-page-text">Principal component analysis and related models</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../lessons/hierarchical/hierarchical_implementation.html" class="pagination-link" aria-label="General implementation of hierarchical models">
+        <span class="nav-page-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">General implementation of hierarchical models</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
